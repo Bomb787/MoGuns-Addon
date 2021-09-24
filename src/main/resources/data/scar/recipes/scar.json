@@ -1,0 +1,24 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "scar:scar"
+    },
+    "materials": [
+        {
+            "item": "minecraft:iron_ingot",
+            "count": 22
+        },
+        {
+            "item": "minecraft:yellow_dye",
+            "count": 2
+        },
+        {
+            "item": "minecraft:ink_sac",
+            "count": 2
+        },
+        {
+            "item": "minecraft:cut_sandstone",
+            "count": 2
+        }
+    ]
+}

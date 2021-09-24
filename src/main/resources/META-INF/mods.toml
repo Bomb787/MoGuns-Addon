@@ -1,0 +1,44 @@
+modLoader="javafml" #mandatory
+loaderVersion="[35,)" #mandatory
+license="GNU GPLv3" #mandatory
+  
+[[mods]]
+modId="scar"
+version="1.0"
+displayName="Scar Addon"
+authors="Bomb787, AlanorMiga"
+credits="MrCrayfish, Bomb787, AlanorMiga"
+description='A SCAR addon for MrCrayfishs Gun Mod'
+
+#Dependencies are an integral part of this
+#We need to add forge and minecraft to run the game
+#However, we also need to require the Gun mod, as well as Obfuscate
+#We need the Gun Mod so we can register guns and other related stuff
+#We need Obfuscate because it is a required dependency of the Gun Mod
+
+#The fields marked with mandatory need to be present when loading the game
+#They are present in the IDE as we added them to our build.gradle file
+[[dependencies.scar]]
+    modId="forge"
+    mandatory=true
+    versionRange="[32,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.scar]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.3,1.16.4,1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.scar]]
+    modId="cgm"
+    mandatory=true
+    versionRange="[1.0.0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.scar]]
+    modId="obfuscate"
+    mandatory=true
+    versionRange="[0.6.0,)"
+    ordering="NONE"
+    side="BOTH"
