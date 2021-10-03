@@ -1,28 +1,28 @@
 {
     "general": {
         "auto": true,
-        "rate": 2,
+        "rate": 4,
         "gripType": "cgm:two_handed",
-        "maxAmmo": 30,
-        "reloadAmount": 5,
-        "recoilKick": 0.75,
-        "recoilAngle": 3.5,
+        "maxAmmo": 20,
+        "reloadAmount": 10,
+        "recoilKick": 0.25,
+        "recoilAngle": 4,
         "alwaysSpread": true,
-        "spread": 2
+        "spread": 4.0
     },
     "projectile": {
         "item": "cgm:basic_bullet",
         "visible": false,
-        "damage": 7,
+        "damage": 8.5,
         "size": 0.2,
         "speed": 30.0,
         "life": 100
     },
     "sounds": {
-        "fire": "scar:item.scar.fire",
+        "fire": "moguns:item.scar.fire",
         "reload": "cgm:item.pistol.reload",
-        "cock": "scar:item.scar.cock",
-        "silencedFire": "scar:item.scar.suppressed_fire"
+        "cock": "moguns:item.scar.cock",
+        "silencedFire": "moguns:item.scar.suppressed_fire"
     },
     "display": {
         "flash": {
@@ -34,7 +34,7 @@
         "zoom": {
             "fovModifier": 0.6,
             "yOffset": 5.2,
-            "zOffset": 3.2
+            "zOffset": 2.75
         },
         "attachments": {
             "scope": {
@@ -48,7 +48,8 @@
             },
             "stock": {
                 "yOffset": 3.6,
-                "zOffset": 8.2
+                "zOffset": 8.2,
+                "scale": 0.0
             },
             "underBarrel": {
                 "yOffset": 2.799,
