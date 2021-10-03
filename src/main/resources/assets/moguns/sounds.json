@@ -1,0 +1,20 @@
+{
+  "item.scar.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/scar_fire" }
+    ]
+  },
+  "item.scar.suppressed_fire": {
+    "subtitle": "subtitle.cgm.fire.silenced",
+    "sounds": [
+      { "name": "moguns:item/scar_suppressed_fire" }
+    ]
+  },
+  "item.scar.cock": {
+    "subtitle": "subtitle.scar.cock",
+    "sounds": [
+      { "name": "moguns:item/scar_cock" }
+    ]
+  }
+}
