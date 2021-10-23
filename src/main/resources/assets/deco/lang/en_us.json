@@ -1,0 +1,32 @@
+{
+
+	//Text
+	"deco.nomatch": "You can't lacquer this!",
+
+	//Creative Tab
+	"itemGroup.deco.deco": "PizzaGummiRat",
+	
+	//Blocks
+	"block.deco.workbench": "Workbench",
+	"block.deco.brass_block": "Brass Block",
+	"block.deco.silver_ore": "Silver Ore",
+	"block.deco.silver_block": "Silver Block",
+	"block.deco.deepslate_silver_ore": "Deepslate Silver Ore",
+	"block.deco.raw_silver_block": "Raw Silver Block",
+	"block.deco.zinc_ore": "Zinc Ore",
+	"block.deco.zinc_block": "Zinc Block",
+	"block.deco.deepslate_zinc_ore": "Deepslate Zinc Ore",
+	"block.deco.raw_zinc_block": "Raw Zinc Block",
+	
+	//Items
+	"item.deco.brass_ingot": "Brass Ingot",
+	"item.deco.brass_nugget": "Brass Nugget",
+	"item.deco.silver_ingot": "Silver Ingot",
+	"item.deco.silver_nugget": "Silver Nugget",
+	"item.deco.raw_silver": "Raw Silver",
+	"item.deco.zinc_ingot": "Zinc Ingot",
+	"item.deco.zinc_nugget": "Zinc Nugget",
+	"item.deco.raw_zinc": "Raw Zinc",
+	"item.deco.lacquer": "Lacquer"
+	
+}

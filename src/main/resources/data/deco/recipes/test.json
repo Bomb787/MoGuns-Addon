@@ -1,0 +1,12 @@
+{
+
+  "type": "deco:hand_recipe",
+  "inputA" : {
+    "item": "deco:lacquer"
+  },
+  "inputB": {
+    "item": "minecraft:stone"
+  },
+  "outputItem": "minecraft:cobblestone"
+  
+}
