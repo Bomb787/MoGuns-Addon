@@ -1,20 +1,38 @@
 {
-  "item.scar.fire": {
+  "item.scarl.fire": {
     "subtitle": "subtitle.cgm.fire",
     "sounds": [
-      { "name": "moguns:item/scar_fire" }
+      { "name": "moguns:item/scarl_fire" }
     ]
   },
-  "item.scar.suppressed_fire": {
+  "item.scarl.suppressed_fire": {
     "subtitle": "subtitle.cgm.fire.silenced",
     "sounds": [
-      { "name": "moguns:item/scar_suppressed_fire" }
+      { "name": "moguns:item/scarl_suppressed_fire" }
     ]
   },
-  "item.scar.cock": {
-    "subtitle": "subtitle.scar.cock",
+  "item.scarl.cock": {
+    "subtitle": "subtitle.scarl.cock",
     "sounds": [
-      { "name": "moguns:item/scar_cock" }
+      { "name": "moguns:item/scarl_cock" }
+    ]
+  },
+  "item.g36c.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/g36c_fire" }
+    ]
+  },
+  "item.g36c.suppressed_fire": {
+    "subtitle": "subtitle.cgm.fire.silenced",
+    "sounds": [
+      { "name": "moguns:item/g36c_suppressed_fire" }
+    ]
+  },
+  "item.g36c.cock": {
+    "subtitle": "subtitle.g36c.cock",
+    "sounds": [
+      { "name": "moguns:item/g36c_cock" }
     ]
   }
 }
