@@ -29,7 +29,10 @@ public enum SpecialModels {
 	TACTICAL_SCARL_STOCK("tactical_scarl_stock"),
 	HEAVY_SCARL_STOCK("heavy_scarl_stock"),
 	G36C_MAIN("g36c_main"),
-	G36C_CHARGING_HANDLE("g36c_charging_handle");
+	G36C_CHARGING_HANDLE("g36c_charging_handle"),
+	LIGHT_G36C_STOCK("light_g36c_stock"),
+	TACTICAL_G36C_STOCK("tactical_g36c_stock"),
+	HEAVY_G36C_STOCK("heavy_g36c_stock");
 	
 	//Variables
     private final ResourceLocation modelLocation;
