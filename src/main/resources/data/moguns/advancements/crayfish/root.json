@@ -1,0 +1,22 @@
+{
+    "display": {
+        "title": {
+            "translate": "advancements.moguns.crayfishtitle"
+        },
+        "description": {
+            "translate": "advancements.moguns.crayfishdescription"
+        },
+        "icon": {
+            "item": "cgm:pistol"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

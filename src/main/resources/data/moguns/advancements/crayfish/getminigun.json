@@ -1,0 +1,35 @@
+{
+  "parent": "moguns:crayfish/root",
+  "display": {
+    "icon": {
+      "item": "cgm:mini_gun"
+    },
+    "title": {
+      "translate": "advancements.moguns.minigun.title"
+    },
+    "description": {
+      "translate": "advancements.moguns.minigun.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "getminigun": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "cgm:mini_gun"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "getminigun"
+    ]
+  ]
+}
