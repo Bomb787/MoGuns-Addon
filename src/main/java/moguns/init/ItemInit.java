@@ -30,11 +30,20 @@ public class ItemInit {
 	public static final RegistryObject<BurstGunItem> G36C = ITEMS.register("g36c", 
 			() -> new BurstGunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
 	
+	public static final RegistryObject<GunItem> BIG_IRON = ITEMS.register("big_iron", 
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> TRASHCAN = ITEMS.register("trashcan", 
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
 	//Ammo Items
 	public static final RegistryObject<Item> AMMO762X51 = ITEMS.register("762x51",
 			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
 	
 	public static final RegistryObject<Item> AMMO556X45 = ITEMS.register("556x45",
+			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<Item> GARBAGE = ITEMS.register("garbage", 
 			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
 
 }
