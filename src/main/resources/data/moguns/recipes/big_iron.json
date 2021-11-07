@@ -1,0 +1,12 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "moguns:big_iron"
+    },
+    "materials": [
+        {
+            "item": "minecraft:iron_block",
+            "count": 8
+        }
+    ]
+}

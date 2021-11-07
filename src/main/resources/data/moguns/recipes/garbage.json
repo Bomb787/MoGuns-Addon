@@ -1,0 +1,21 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "moguns:garbage"
+    },
+    "materials": [
+        {
+            "item": "minecraft:rotten_flesh"
+        },
+        {
+            "item": "minecraft:poisonous_potato"
+        },
+        {
+            "item": "minecraft:spider_eye"
+        },
+        {
+            "item": "minecraft:gunpowder",
+            "count": 2
+        }
+    ]
+}

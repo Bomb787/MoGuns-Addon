@@ -1,0 +1,16 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "moguns:g36c"
+    },
+    "materials": [
+        {
+            "item": "minecraft:iron_ingot",
+            "count": 22
+        },
+        {
+            "item": "minecraft:ink_sac",
+            "count": 6
+        }
+    ]
+}
