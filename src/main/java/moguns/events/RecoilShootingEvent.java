@@ -31,6 +31,7 @@ public class RecoilShootingEvent {
 	//This method is called every time a gun is shot.
 	@SubscribeEvent
 	public static void preShoot(Pre event) {
+		
 		if(!(event.getStack().getItem() instanceof GunItem))
 			return;
 	    recoilRand = new Random().nextInt(2);
