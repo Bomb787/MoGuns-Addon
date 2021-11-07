@@ -3,6 +3,9 @@ package moguns.client.render.gun.model;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.RenderUtil;
+import com.mrcrayfish.guns.common.Gun;
+import com.mrcrayfish.guns.init.ModItems;
+import com.mrcrayfish.guns.item.attachment.IAttachment;
 
 import moguns.client.SpecialModels;
 import net.minecraft.client.Minecraft;
@@ -23,6 +26,22 @@ public class G36CModel implements IOverrideModel {
 		
 		//Renders the static parts of the model, the magazine is separate from the base for possible future use.
 		RenderUtil.renderModel(SpecialModels.G36C_MAIN.getModel(), stack, matrixStack, buffer, light, overlay);
+		
+		if(Gun.getAttachment(IAttachment.Type.STOCK, stack).getItem() == ModItems.LIGHT_STOCK.get()) {
+			
+            RenderUtil.renderModel(SpecialModels.LIGHT_G36C_STOCK.getModel(), stack, matrixStack, buffer, light, overlay);
+
+        }
+		if(Gun.getAttachment(IAttachment.Type.STOCK, stack).getItem() == ModItems.TACTICAL_STOCK.get()) {
+			
+            RenderUtil.renderModel(SpecialModels.TACTICAL_G36C_STOCK.getModel(), stack, matrixStack, buffer, light, overlay);
+
+        }
+		if(Gun.getAttachment(IAttachment.Type.STOCK, stack).getItem() == ModItems.WEIGHTED_STOCK.get()) {
+	
+			RenderUtil.renderModel(SpecialModels.HEAVY_G36C_STOCK.getModel(), stack, matrixStack, buffer, light, overlay);
+
+		}
 		
 		if(entity.equals(Minecraft.getInstance().player)) {
 			
