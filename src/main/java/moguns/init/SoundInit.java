@@ -35,6 +35,8 @@ public class SoundInit {
 	
 	public static final RegistryObject<SoundEvent> LAUGH = register("item.trashcan.reload");
 	
+	public static final RegistryObject<SoundEvent> BIG_IRON_FIRE = register("item.big_iron.fire");
+	
 	//Method to help us register sounds
 	private static RegistryObject<SoundEvent> register(String key) {
 			
