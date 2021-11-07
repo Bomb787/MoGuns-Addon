@@ -34,5 +34,23 @@
     "sounds": [
       { "name": "moguns:item/g36c_cock" }
     ]
+  },
+  "item.trashcan.boom": {
+    "subtitle": "subtitle.trashcan.boom",
+    "sounds": [
+      { "name": "moguns:item/boom" }
+    ]
+  },
+  "item.trashcan.reload": {
+    "subtitle": "subtitle.trashcan.reload",
+    "sounds": [
+      { "name": "moguns:item/trashcanreload" }
+    ]
+  },
+  "item.big_iron.fire": {
+    "subtitle": "subtitle.big_iron.pew",
+    "sounds": [
+      { "name": "moguns:item/big_iron" }
+    ]
   }
 }
