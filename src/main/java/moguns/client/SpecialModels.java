@@ -28,6 +28,8 @@ public enum SpecialModels {
 	LIGHT_SCARL_STOCK("light_scarl_stock"),
 	TACTICAL_SCARL_STOCK("tactical_scarl_stock"),
 	HEAVY_SCARL_STOCK("heavy_scarl_stock"),
+	SCARL_MAIN("scarl_main"),
+	SCARL_CHARGING_HANDLE("scarl_charging_handle"),
 	G36C_MAIN("g36c_main"),
 	G36C_CHARGING_HANDLE("g36c_charging_handle"),
 	LIGHT_G36C_STOCK("light_g36c_stock"),
