@@ -1,4 +1,13 @@
 {
+	//Advancements
+	"advancements.moguns.title": "Mo' Guns",
+	"advancements.moguns.description": "What it says on the tin",
+	"advancements.moguns.crayfishtitle": "MrCrayfish's Gun Mod",
+	"advancements.moguns.crayfishdescription": "Welcome to MrCrayfish's Gun Mod!",
+	"advancements.moguns.minigun.title": "BRRRRRRRRT",
+	"advancements.moguns.minigun.description": "It costs 4 stacks of emeralds to fire this gun...for twelve seconds.",
+	"advancements.moguns.getbigiron.title": "Arizona Ranger",
+	"advancements.moguns.getbigiron.description": "To the town of Agua Fria rode a stranger one fine day...",
 	
 	//Creative Tab
 	"itemGroup.moguns": "Mo' Guns",
