@@ -11,7 +11,7 @@
         "spread": 50
     },
     "projectile": {
-        "item": "bwm:garbage",
+        "item": "moguns:garbage",
         "visible": false,
         "damage": 30,
         "size": 0.2,
