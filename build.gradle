@@ -13,9 +13,9 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.1'
-group = 'bwm'
-archivesBaseName = 'bwm'
+version = '1.2-1.16.5'
+group = 'moguns'
+archivesBaseName = 'MoGuns'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
@@ -83,17 +83,18 @@ dependencies {
 
     minecraft 'net.minecraftforge:forge:1.16.5-36.1.0'
     compile fg.deobf('curse.maven:obfuscate-289380:3169370')
-    compile fg.deobf('curse.maven:mrcrayfishs-gun-mod-289479:3203497') 
+    compile fg.deobf('curse.maven:mrcrayfishs-gun-mod-289479:3203497')
+    
 
 }
 
 jar {
     manifest {
         attributes([
-            "Specification-Title": "Weapons Mod",
+            "Specification-Title": "Mo' Guns",
             "Specification-Vendor": "Bomb787",
-            "Specification-Version": "1",
-            "Implementation-Title": "Bomb's Weapons Mod",
+            "Specification-Version": "1.2",
+            "Implementation-Title": "Mo' Guns",
             "Implementation-Version": project.version,
             "Implementation-Vendor" :"Bomb787",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
