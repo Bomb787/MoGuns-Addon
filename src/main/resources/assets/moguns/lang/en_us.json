@@ -1,12 +1,18 @@
 {
 	
 	//Creative Tab
-	"itemGroup.moguns": "MoGuns",
+	"itemGroup.moguns": "Mo' Guns",
 	
 	//Sounds
-	"subtitle.scar.cock": "FN SCAR Cocking",
+	"subtitle.scarl.cock": "FN SCAR-L Cocking",
+	"subtitle.g36c.cock": "G36C Cocking",
 	
 	//Guns
-	"item.moguns.scar": "FN SCAR"
+	"item.moguns.scarl": "FN SCAR-L",
+	"item.moguns.g36c": "G36C",
+	
+	//Ammo
+	"item.moguns.762x51": "7.62x51 NATO",
+	"item.moguns.556x45": "5.56x45 NATO"
 
 }
