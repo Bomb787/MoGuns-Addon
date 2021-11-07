@@ -1,12 +1,12 @@
 modLoader="javafml" #mandatory
 loaderVersion="[35,)" #mandatory
 license="GNU GPLv3" #mandatory
-  
+ 
 [[mods]]
 modId="moguns"
-version="1.1"
-displayName="MoGuns"
-authors="Bomb787, AlanorMiga"
+version="1.2"
+displayName="Mo' Guns"
+authors="Code by Bomb787, art by AlanorMiga"
 credits="MrCrayfish, Bomb787, AlanorMiga"
 description='A simple addon for MrCrayfishs Gun Mod'
 
