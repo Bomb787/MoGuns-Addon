@@ -31,6 +31,10 @@ public class SoundInit {
 	
 	public static final RegistryObject<SoundEvent> G36C_COCK = register("item.g36c.cock");
 	
+	public static final RegistryObject<SoundEvent> BOOM = register("item.trashcan.boom");
+	
+	public static final RegistryObject<SoundEvent> LAUGH = register("item.trashcan.reload");
+	
 	//Method to help us register sounds
 	private static RegistryObject<SoundEvent> register(String key) {
 			
