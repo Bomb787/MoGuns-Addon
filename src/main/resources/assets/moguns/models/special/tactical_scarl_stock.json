@@ -1,9 +1,9 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made by AlanorMiga and Bomb787 with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "moguns:items/scar_stock",
-		"particle": "moguns:items/scar_stock"
+		"0": "moguns:items/scarl_stock",
+		"particle": "moguns:items/scarl_stock"
 	},
 	"elements": [
 		{
