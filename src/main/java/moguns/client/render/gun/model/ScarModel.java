@@ -21,6 +21,7 @@ import moguns.client.SpecialModels;
  */
 public class ScarModel implements IOverrideModel {
 
+	@SuppressWarnings("resource")
 	@Override
 	public void render(float partialTicks, TransformType transformType, ItemStack stack, ItemStack parent, LivingEntity entity, MatrixStack matrixStack, IRenderTypeBuffer buffer, int light, int overlay) {
 		
