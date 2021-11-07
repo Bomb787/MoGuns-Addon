@@ -1,0 +1,59 @@
+{
+    "general": {
+        "auto": true,
+        "rate": 2,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 30,
+        "reloadAmount": 10,
+        "recoilKick": 0.25,
+        "recoilAngle": 3,
+        "alwaysSpread": true,
+        "spread": 2.0
+    },
+    "projectile": {
+        "item": "moguns:556x45",
+        "visible": false,
+        "damage": 7,
+        "size": 0.2,
+        "speed": 30.0,
+        "life": 100
+    },
+    "sounds": {
+        "fire": "moguns:item.g36c.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.g36c.cock",
+        "silencedFire": "moguns:item.g36c.suppressed_fire"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 3.6,
+            "zOffset": -6.41
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.6,
+            "yOffset": 5.9,
+            "zOffset": 2.75
+        },
+        "attachments": {
+            "scope": {
+                "yOffset": 5.25,
+                "zOffset": 3.75
+            },
+            "barrel": {
+                "yOffset": 3.6,
+                "zOffset": -5.9,
+                "scale": 0.5
+            },
+            "stock": {
+                "yOffset": 3.6,
+                "zOffset": 8.2
+            },
+            "underBarrel": {
+                "yOffset": 2.799,
+                "zOffset": -1.0
+            }
+        }
+    }
+}
