@@ -18,8 +18,8 @@ import net.minecraftforge.fml.common.Mod;
 public class ShootingEvent {
 	
 	@SubscribeEvent
-    public static void onKeyPressed(InputEvent.RawMouseEvent event)
-    {
+    public static void onKeyPressed(InputEvent.RawMouseEvent event) {
+	    
         Minecraft mc = Minecraft.getInstance();
         PlayerEntity player = mc.player;
         if(player == null)
@@ -33,12 +33,14 @@ public class ShootingEvent {
                 BURST = 0;
             
         }
+	    
     }
 	
 	public static int BURST = 0;
 	
     @SubscribeEvent
     public static void preShoot(Pre event) {
+	    
         if(!(event.getStack().getItem() instanceof BurstGunItem))
             return;
         
