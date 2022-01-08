@@ -1,24 +1,24 @@
 {
     "type": "cgm:workbench",
     "result": {
-        "item": "moguns:scarl"
+        "item": "moguns:as_val"
     },
     "materials": [
         {
             "item": "minecraft:iron_ingot",
-            "count": 22
+            "count": 16
         },
         {
-            "item": "minecraft:yellow_dye",
+            "item": "minecraft:iron_nugget",
+            "count": 5
+        },
+        {
+            "item": "minecraft:black_dye",
             "count": 2
         },
         {
-            "item": "minecraft:ink_sac",
-            "count": 2
-        },
-        {
-            "item": "minecraft:cut_sandstone",
-            "count": 2
+            "item": "minecraft:sponge",
+            "count": 1
         }
     ]
 }

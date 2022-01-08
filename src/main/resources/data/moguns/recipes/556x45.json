@@ -1,0 +1,16 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item":"moguns:556x45","count":30
+    },
+    "materials": [
+        {
+            "item": "minecraft:iron_nugget",
+            "count": 4
+        },
+        {
+            "item": "minecraft:gunpowder",
+            "count": 2
+        }
+    ]
+}

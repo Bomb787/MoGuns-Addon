@@ -1,0 +1,20 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "moguns:akm"
+    },
+    "materials": [
+        {
+            "item": "minecraft:iron_ingot",
+            "count": 18
+        },
+        {
+            "item": "minecraft:black_dye",
+            "count": 1
+        },
+        {
+            "item": "minecraft:spruce_planks",
+            "count": 2
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "moguns:m16a1"
+    },
+    "materials": [
+        {
+            "item": "minecraft:iron_ingot",
+            "count": 25
+        },
+        {
+            "item": "minecraft:repeater",
+            "count": 1
+        },
+        {
+            "item": "minecraft:black_dye",
+            "count": 4
+        }
+    ]
+}
