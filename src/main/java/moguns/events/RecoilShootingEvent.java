@@ -44,14 +44,19 @@ public class RecoilShootingEvent {
 		
 	@SubscribeEvent
 	public static void recoil(Post event) {
+		
+		if(event.isClient()) {
 			
-		ItemStack heldItem = event.getStack();
-		GunItem gunItem = (GunItem) heldItem.getItem();
-	    Gun modifiedGun = gunItem.getModifiedGun(heldItem);
-	    float recoilModifier = 1.0F - GunModifierHelper.getRecoilModifier(heldItem);
-	    recoilModifier *= RecoilHandler.get().getAdsRecoilReduction(modifiedGun);
-	    cameraRecoil = modifiedGun.getGeneral().getRecoilAngle() * recoilModifier;
-	    progressCameraRecoil = 0F;
+			ItemStack heldItem = event.getStack();
+			GunItem gunItem = (GunItem) heldItem.getItem();
+		    Gun modifiedGun = gunItem.getModifiedGun(heldItem);
+		    float recoilModifier = 1.0F - GunModifierHelper.getRecoilModifier(heldItem);
+		    recoilModifier *= RecoilHandler.get().getAdsRecoilReduction(modifiedGun);
+		    cameraRecoil = modifiedGun.getGeneral().getRecoilAngle() * recoilModifier;
+		    progressCameraRecoil = 0F;
+			
+		}
+		
 	        
 	}
 		
@@ -59,6 +64,7 @@ public class RecoilShootingEvent {
 	This method is called multiple times after a gun is shot to smoothly move the recoil horizontally.
 	The recoilRand variable determines whether it moves left or right.
 	*/
+	
 	@SubscribeEvent
 	public static void onRenderTick(TickEvent.RenderTickEvent event) {
 	    	
@@ -103,5 +109,4 @@ public class RecoilShootingEvent {
 	    }
 	        
 	}
-
 }

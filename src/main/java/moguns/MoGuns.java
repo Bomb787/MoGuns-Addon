@@ -2,8 +2,14 @@ package moguns;
 
 import com.mrcrayfish.guns.client.render.gun.ModelOverrides;
 
+import moguns.client.render.gun.model.AKMModel;
+import moguns.client.render.gun.model.ASVALModel;
+import moguns.client.render.gun.model.FamasModel;
 import moguns.client.render.gun.model.G36CModel;
+import moguns.client.render.gun.model.M1GarandModel;
+import moguns.client.render.gun.model.ReflexSightModel;
 import moguns.client.render.gun.model.ScarModel;
+import moguns.client.render.gun.model.ThompsonModel;
 import moguns.init.ItemInit;
 import moguns.init.SoundInit;
 import net.minecraft.item.ItemGroup;
@@ -89,6 +95,12 @@ public class MoGuns {
 		//Register all of our models.
 		ModelOverrides.register(ItemInit.SCARL.get(), new ScarModel());
 		ModelOverrides.register(ItemInit.G36C.get(), new G36CModel());
+		ModelOverrides.register(ItemInit.AKM.get(), new AKMModel());
+		ModelOverrides.register(ItemInit.AS_VAL.get(), new ASVALModel());
+		ModelOverrides.register(ItemInit.FAMAS.get(), new FamasModel());
+		ModelOverrides.register(ItemInit.M1_GARAND.get(), new M1GarandModel());
+		ModelOverrides.register(ItemInit.REFLEX_SIGHT.get(), new ReflexSightModel());
+		ModelOverrides.register(ItemInit.THOMPSON.get(), new ThompsonModel());
 	        
 	}
 

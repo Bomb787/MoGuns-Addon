@@ -34,7 +34,21 @@ public enum SpecialModels {
 	G36C_CHARGING_HANDLE("g36c_charging_handle"),
 	LIGHT_G36C_STOCK("light_g36c_stock"),
 	TACTICAL_G36C_STOCK("tactical_g36c_stock"),
-	HEAVY_G36C_STOCK("heavy_g36c_stock");
+	HEAVY_G36C_STOCK("heavy_g36c_stock"),
+	AKM_MAIN("akm_main"),
+    AKM_CHARGING_HANDLE("akm_charging_handle"),
+    AS_VAL_MAIN("as_val_main"),
+    AS_VAL_CHARGING_HANDLE("as_val_charging_handle"),
+    LIGHT_THOMPSON_GRIP("light_thompson_grip"),
+    SPECIALISED_THOMPSON_GRIP("specialised_thompson_grip"),
+    THOMPSON_MAIN("thompson_main"),
+    THOMPSON_CHARGING_HANDLE("thompson_charging_handle"),
+    FAMAS_MAIN("famas_main"),
+    FAMAS_CHARGING_HANDLE("famas_charging_handle"),
+    M1_GARAND_MAIN("m1_garand_main"),
+    M1_GARAND_CHARGING_HANDLE("m1_garand_charging_handle"),
+    M1_GARAND_MAGAZINE("m1_garand_magazine"),
+    REFLEX_SIGHT("reflex_sight");
 	
 	//Variables
     private final ResourceLocation modelLocation;

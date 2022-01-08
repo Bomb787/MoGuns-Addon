@@ -37,6 +37,32 @@ public class SoundInit {
 	
 	public static final RegistryObject<SoundEvent> BIG_IRON_FIRE = register("item.big_iron.fire");
 	
+	public static final RegistryObject<SoundEvent> AKM_FIRE = register("item.akm.fire");
+	
+	public static final RegistryObject<SoundEvent> AKM_COCK = register("item.akm.cock");
+	
+	public static final RegistryObject<SoundEvent> AS_VAL_FIRE = register("item.as_val.fire");
+	
+	public static final RegistryObject<SoundEvent> AS_VAL_COCK = register("item.as_val.cock");
+	
+	public static final RegistryObject<SoundEvent> THOMPSON_FIRE = register("item.thompson.fire");
+	
+	public static final RegistryObject<SoundEvent> THOMPSON_COCK = register("item.thompson.cock");
+	
+	public static final RegistryObject<SoundEvent> M16A1_FIRE = register("item.m16a1.fire");
+	
+	public static final RegistryObject<SoundEvent> M16A1_COCK = register("item.m16a1.cock");
+	
+	public static final RegistryObject<SoundEvent> FAMAS_FIRE = register("item.famas.fire");
+	
+	public static final RegistryObject<SoundEvent> FAMAS_COCK = register("item.famas.cock");
+	
+	public static final RegistryObject<SoundEvent> GARAND_FIRE = register("item.m1_garand.fire");
+	
+	public static final RegistryObject<SoundEvent> GARAND_COCK = register("item.m1_garand.cock");
+	
+	public static final RegistryObject<SoundEvent> GARAND_PING = register("item.m1_garand.ping");
+	
 	//Method to help us register sounds
 	private static RegistryObject<SoundEvent> register(String key) {
 			
