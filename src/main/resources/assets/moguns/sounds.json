@@ -52,5 +52,83 @@
     "sounds": [
       { "name": "moguns:item/big_iron" }
     ]
+  },
+  "item.akm.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/akm_fire" }
+    ]
+  },
+  "item.akm.cock": {
+    "subtitle": "subtitle.akm.cock",
+    "sounds": [
+      { "name": "moguns:item/akm_cock" }
+    ]
+  },
+  "item.as_val.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/as_val_fire" }
+    ]
+  },
+  "item.as_val.cock": {
+    "subtitle": "subtitle.as_val.cock",
+    "sounds": [
+      { "name": "moguns:item/as_val_cock" }
+    ]
+  },
+  "item.thompson.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/thompson_fire" }
+    ]
+  },
+  "item.thompson.cock": {
+    "subtitle": "subtitle.thompson.cock",
+    "sounds": [
+      { "name": "moguns:item/thompson_cock" }
+    ]
+  },
+  "item.m16a1.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/m16a1_fire" }
+    ]
+  },
+  "item.m16a1.cock": {
+    "subtitle": "subtitle.m16a1.cock",
+    "sounds": [
+      { "name": "moguns:item/m16a1_cock" }
+    ]
+  },
+  "item.famas.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/famas_fire" }
+    ]
+  },
+  "item.famas.cock": {
+    "subtitle": "subtitle.famas.cock",
+    "sounds": [
+      { "name": "moguns:item/famas_cock" }
+    ]
+  },
+  "item.m1_garand.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/m1_garand_fire" }
+    ]
+  },
+  "item.m1_garand.cock": {
+    "subtitle": "subtitle.m1_garand.cock",
+    "sounds": [
+      { "name": "moguns:item/m1_garand_cock" }
+    ]
+  },
+  "item.m1_garand.ping": {
+    "subtitle": "subtitle.m1_garand.ping",
+    "sounds": [
+      { "name": "moguns:item/m1_garand_ping" }
+    ]
   }
 }

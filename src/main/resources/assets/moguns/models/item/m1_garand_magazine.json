@@ -1,0 +1,78 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "moguns:items/m1_garand",
+		"particle": "moguns:items/m1_garand"
+	},
+	"elements": [
+		{
+			"name": "Cube",
+			"from": [7.67, 3.6502, 11.00347],
+			"to": [8.33, 3.7502, 11.78347],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 1.9152, 21.97347]},
+			"faces": {
+				"north": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"east": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"south": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"west": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"up": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [7.67, 3.1502, 11.00347],
+			"to": [8.33, 3.2502, 11.78347],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 1.9152, 21.97347]},
+			"faces": {
+				"north": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"east": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"south": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"west": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"up": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [7.77, 3.2502, 11.70347],
+			"to": [8.23, 3.6502, 11.78347],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 1.9152, 21.97347]},
+			"faces": {
+				"north": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"east": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"south": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"west": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"up": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [6.5, 4.5, 7.5, 5.5], "rotation": 270, "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, -6.75],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"firstperson_righthand": {
+			"translation": [-3.5, 8.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"translation": [3.75, -3.25, 0]
+		},
+		"ground": {
+			"translation": [0, 5, -1]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [1.25, 4.5, 0],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [-3.25, 11.25, -2],
+			"scale": [2, 2, 2]
+		}
+	}
+}

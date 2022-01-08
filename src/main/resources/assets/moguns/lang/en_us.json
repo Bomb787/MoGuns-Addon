@@ -15,6 +15,13 @@
 	//Sounds
 	"subtitle.scarl.cock": "FN SCAR-L Cocking",
 	"subtitle.g36c.cock": "G36C Cocking",
+	"subtitle.akm.cock": "AKM Cocking",
+	"subtitle.as_val.cock": "AS VAL Cocking",
+	"subtitle.thompson.cock": "Thompson Cocking",
+	"subtitle.m16a1.cock": "M16A1 Cocking",
+	"subtitle.famas.cock": "FAMAS Cocking",
+	"subtitle.m1_garand.cock": "M1 Garand Cocking",
+	"subtitle.m1_garand.ping": "M1 Garand Ping",
 	"subtitle.trashcan.boom": "RIP Headphone Users",
 	"subtitle.trashcan.reload": "Polish guys laughing",
 	"subtitle.big_iron.pew": "Texas Red had not cleared leather...",
@@ -24,10 +31,21 @@
 	"item.moguns.g36c": "G36C",
 	"item.moguns.big_iron": "Big Iron",
 	"item.moguns.trashcan": "Trash Can",
+	"item.moguns.akm": "AKM",
+	"item.moguns.as_val": "AS VAL",
+	"item.moguns.thompson": "Thompson",
+	"item.moguns.m16a1": "M16A1",
+	"item.moguns.famas": "FAMAS",
+	"item.moguns.m1_garand": "M1 Garand",
+
+	//Attachments
+	"item.moguns.reflex_sight": "Reflex Sight",
 	
 	//Ammo
 	"item.moguns.762x51": "7.62x51 NATO",
 	"item.moguns.556x45": "5.56x45 NATO",
-	"item.moguns.garbage": "Garbage"
+	"item.moguns.garbage": "Garbage",
+	"item.moguns.9x39": "9x39mm",
+	"item.moguns.9x19": "9x19mm"
 
 }

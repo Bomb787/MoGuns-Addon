@@ -1,0 +1,81 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "moguns:items/famas",
+		"particle": "moguns:items/famas"
+	},
+	"elements": [
+		{
+			"name": "Receiver 9",
+			"from": [8.19456, 3.05036, 16.75],
+			"to": [8.58756, 3.75036, 19.15],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8.51856, 3.34536, 19.3975]},
+			"faces": {
+				"east": {"uv": [0, 2.5, 0.5, 3], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Receiver 7",
+			"from": [7.8, 4, 10.55],
+			"to": [8.2, 4.3, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.4, 6]},
+			"faces": {
+				"north": {"uv": [0, 2, 0.5, 2.5], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"east": {"uv": [0, 2, 0.5, 2.5], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"south": {"uv": [0, 2, 0.5, 2.5], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"west": {"uv": [0, 2, 0.5, 2.5], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"up": {"uv": [0, 2, 0.5, 2.5], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 2, 0.5, 2.5], "rotation": 270, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Receiver 8",
+			"from": [7.9, 4.3, 11.25],
+			"to": [8.1, 5, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.4, 6]},
+			"faces": {
+				"north": {"uv": [0, 2.5, 0.5, 3], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"east": {"uv": [0, 2.5, 0.5, 3], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"south": {"uv": [0, 2.5, 0.5, 3], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"west": {"uv": [0, 2.5, 0.5, 3], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"up": {"uv": [0, 2.5, 0.5, 3], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 2.5, 0.5, 3], "rotation": 270, "texture": "#0", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, -6.75],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"firstperson_righthand": {
+			"translation": [-3.5, 8.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"translation": [3.75, -3.25, 0]
+		},
+		"ground": {
+			"translation": [0, 5, -1]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [1.25, 4.5, 0],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [-3.25, 11.25, -2],
+			"scale": [2, 2, 2]
+		}
+	},
+	"groups": [
+		{
+			"name": "Chamber",
+			"origin": [8.4, 7.4, 6],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}
