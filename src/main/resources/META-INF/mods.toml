@@ -1,10 +1,10 @@
 modLoader="javafml" #mandatory
 loaderVersion="[35,)" #mandatory
 license="GNU GPLv3" #mandatory
- 
+
 [[mods]]
 modId="moguns"
-version="1.4.1"
+version="1.6"
 displayName="Mo' Guns"
 authors="Code by Bomb787, art by AlanorMiga"
 credits="MrCrayfish, Bomb787, AlanorMiga"

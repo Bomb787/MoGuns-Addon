@@ -1,0 +1,46 @@
+{
+    "general": {
+        "auto": false,
+        "rate": 3,
+        "gripType": "cgm:one_handed",
+        "maxAmmo": 6,
+        "reloadAmount": 4,
+        "recoilKick": 0.25,
+        "recoilAngle": 1,
+        "alwaysSpread": false,
+        "spread": 4.0
+    },
+    "projectile": {
+        "item": "moguns:9x19",
+        "visible": false,
+        "damage": 5.5,
+        "size": 0.2,
+        "speed": 25.0,
+        "life": 30
+    },
+    "sounds": {
+        "fire": "moguns:item.m1911.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.m1911.cock",
+        "silencedFire": "moguns:item.glock.suppressed_fire"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 3.3,
+            "zOffset": 3.3
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.7,
+            "yOffset": 3.7
+        },
+        "attachments": {
+            "barrel": {
+                "yOffset": 3,
+                "zOffset": 3.6,
+                "scale": 0.5
+            }
+        }
+    }
+}

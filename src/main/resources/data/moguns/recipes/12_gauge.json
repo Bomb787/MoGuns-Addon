@@ -1,0 +1,24 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item":"moguns:12_gauge","count":4
+    },
+    "materials": [
+        {
+            "item": "minecraft:paper",
+            "count": 2
+        },
+        {
+            "item": "minecraft:iron_nugget",
+            "count": 5
+        },
+        {
+            "item": "minecraft:gunpowder",
+            "count": 1
+        },
+        {
+            "item": "minecraft:iron_ingot",
+            "count": 2
+        }
+    ]
+}

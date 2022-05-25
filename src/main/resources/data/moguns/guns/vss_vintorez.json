@@ -1,44 +1,46 @@
 {
     "general": {
-        "auto": true,
-        "rate": 4,
+        "auto": false,
+        "rate": 6,
         "gripType": "cgm:two_handed",
-        "maxAmmo": 40,
-        "reloadAmount": 5,
+        "maxAmmo": 10,
+        "reloadAmount": 4,
         "recoilKick": 0.25,
-        "recoilAngle": 3,
-        "alwaysSpread": true,
-        "spread": 3.0
+        "recoilAngle": 2,
+        "alwaysSpread": false,
+        "spread": 2.5,
+        "silencedFire": true
     },
     "projectile": {
-        "item": "moguns:762x39",
+        "item": "moguns:9x39",
         "visible": false,
-        "damage": 9.5,
+        "damage": 10,
         "size": 0.2,
         "speed": 30.0,
         "life": 100
+
     },
     "sounds": {
-        "fire": "moguns:item.akm.fire",
+        "fire": "moguns:item.as_val.fire",
         "reload": "cgm:item.pistol.reload",
-        "cock": "moguns:item.akm.cock"
+        "cock": "moguns:item.as_val.cock"
     },
     "display": {
         "flash": {
-            "yOffset": 2.9,
+            "yOffset": 3.6,
             "zOffset": -8.41
         }
     },
     "modules": {
         "zoom": {
             "fovModifier": 0.6,
-            "yOffset": 4.8,
+            "yOffset": 4.35,
             "zOffset": 2.75
         },
         "attachments": {
             "scope": {
-                "yOffset": 4.3,
-                "zOffset": 4.0
+                "yOffset": 3.8,
+                "zOffset": 5.0
             }
         }
     }

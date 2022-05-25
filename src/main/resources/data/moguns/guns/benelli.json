@@ -1,0 +1,61 @@
+{
+    "general": {
+        "auto": false,
+        "rate": 17,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 6,
+        "reloadAmount": 1,
+        "recoilKick": 0.25,
+        "recoilAngle": 10,
+        "projectileAmount": 6,
+        "alwaysSpread": true,
+        "spread": 10.0
+    },
+    "projectile": {
+        "item": "moguns:12_gauge",
+        "visible": false,
+        "damage": 20.0,
+        "size": 0.2,
+        "speed": 30.0,
+        "life": 3
+    },
+    "sounds": {
+        "fire": "moguns:item.benelli.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.benelli.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 4,
+            "zOffset": -13
+        }
+    },
+        "modules": {
+            "zoom": {
+                "fovModifier": 0.6,
+                "yOffset": 4.6,
+                "zOffset": 2.75
+            },
+            "attachments": {
+                "scope": {
+                    "yOffset": 4.2,
+                    "zOffset": 3.0
+                },
+                "barrel": {
+                    "yOffset": 3.7,
+                    "zOffset": -12,
+                    "scale": 0.5
+                },
+                "stock": {
+                    "yOffset": 3.6,
+                    "zOffset": 8.2,
+                    "scale": 0.0
+                },
+                "underBarrel": {
+                    "yOffset": 2.3,
+                    "zOffset": -2.0
+                }
+            }
+        }
+    }
+

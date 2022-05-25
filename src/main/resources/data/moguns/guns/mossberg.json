@@ -1,0 +1,47 @@
+{
+    "general": {
+        "auto": false,
+        "rate": 17,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 8,
+        "reloadAmount": 1,
+        "recoilKick": 0.25,
+        "recoilAngle": 12,
+        "projectileAmount": 6,
+        "alwaysSpread": true,
+        "spread": 8.0
+    },
+    "projectile": {
+        "item": "moguns:12_gauge",
+        "visible": false,
+        "damage": 22.0,
+        "size": 0.2,
+        "speed": 30.0,
+        "life": 6
+    },
+    "sounds": {
+        "fire": "moguns:item.mossberg.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.mossberg.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 4,
+            "zOffset": -13
+        }
+    },
+        "modules": {
+            "zoom": {
+                "fovModifier": 0.6,
+                "yOffset": 4.4,
+                "zOffset": 2.75
+            },
+            "attachments": {
+                "scope": {
+                    "yOffset": 4.0,
+                    "zOffset": 4.0
+                }
+            }
+        }
+    }
+

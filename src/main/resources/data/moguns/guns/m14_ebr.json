@@ -1,0 +1,60 @@
+{
+    "general": {
+        "auto": false,
+        "rate": 3,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 20,
+        "reloadAmount": 8,
+        "recoilKick": 0.35,
+        "recoilAngle": 4,
+        "alwaysSpread": false,
+        "spread": 1.9
+    },
+    "projectile": {
+        "item": "moguns:762x51",
+        "visible": false,
+        "damage": 16.5,
+        "size": 0.2,
+        "speed": 30.0,
+        "life": 100
+    },
+    "sounds": {
+        "fire": "moguns:item.m14_ebr.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.m14_ebr.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 2.9,
+            "zOffset": -11.41
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.6,
+            "yOffset": 4.15,
+            "zOffset": 2.75
+        },
+        "attachments": {
+            "scope": {
+                "yOffset": 3.9,
+                "zOffset": 3.0
+            },
+            "barrel": {
+                "yOffset": 3.1,
+                "zOffset": -11,
+                "scale": 0.5
+            },
+            "stock": {
+                "yOffset": 3.6,
+                "zOffset": 8.2,
+                "scale": 0.0
+            },
+            "underBarrel": {
+                "yOffset": 2.4,
+                "zOffset": -2.0
+            }
+        }
+    }
+}
+

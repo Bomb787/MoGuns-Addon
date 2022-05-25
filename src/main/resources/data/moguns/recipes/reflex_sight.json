@@ -1,0 +1,20 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "moguns:reflex_sight"
+    },
+    "materials": [
+        {
+            "item": "minecraft:iron_ingot",
+            "count": 1
+        },
+        {
+            "item": "minecraft:glass_pane",
+            "count": 1
+        },
+	{
+            "item": "minecraft:redstone",
+            "count": 1
+        }
+    ]
+}
