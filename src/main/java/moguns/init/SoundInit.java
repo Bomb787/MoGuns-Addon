@@ -63,6 +63,36 @@ public class SoundInit {
 	
 	public static final RegistryObject<SoundEvent> GARAND_PING = register("item.m1_garand.ping");
 	
+	public static final RegistryObject<SoundEvent> AWP_FIRE = register("item.awp.fire");
+
+	public static final RegistryObject<SoundEvent> AWP_BOLT = register("item.awp.bolt");
+	
+	public static final RegistryObject<SoundEvent> BENELLI_FIRE = register("item.benelli.fire");
+	
+	public static final RegistryObject<SoundEvent> BENELLI_COCK = register("item.benelli.cock");
+	
+	public static final RegistryObject<SoundEvent> GLOCK_FIRE = register("item.glock.fire");
+	
+	public static final RegistryObject<SoundEvent> GLOCK_FIRE_SUPPRESSED = register("item.glock.suppressed_fire");
+	
+	public static final RegistryObject<SoundEvent> GLOCK_COCK = register("item.glock.cock");
+	
+	public static final RegistryObject<SoundEvent> M14_EBR_FIRE = register("item.m14_ebr.fire");
+	
+	public static final RegistryObject<SoundEvent> M14_EBR_COCK = register("item.m14_ebr.cock");
+	
+	public static final RegistryObject<SoundEvent> M1911_FIRE = register("item.m1911.fire");
+	
+	public static final RegistryObject<SoundEvent> M1911_COCK = register("item.m1911.cock");
+	
+	public static final RegistryObject<SoundEvent> MOSSBERG_FIRE = register("item.mossberg.fire");
+	
+	public static final RegistryObject<SoundEvent> MOSSBERG_COCK = register("item.mossberg.cock");
+	
+	public static final RegistryObject<SoundEvent> REMINGTON_870_FIRE = register("item.remington_870.fire");
+	
+	public static final RegistryObject<SoundEvent> REMINGTON_870_COCK = register("item.remington_870.cock");
+	
 	//Method to help us register sounds
 	private static RegistryObject<SoundEvent> register(String key) {
 			

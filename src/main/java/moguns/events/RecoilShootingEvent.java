@@ -32,9 +32,13 @@ public class RecoilShootingEvent {
 	@SubscribeEvent
 	public static void preShoot(Pre event) {
 		
-		if(!(event.getStack().getItem() instanceof GunItem))
-			return;
-	    recoilRand = new Random().nextInt(2);
+		if(!event.isClient()) {
+		
+			if(!(event.getStack().getItem() instanceof GunItem))
+				return;
+		    recoilRand = new Random().nextInt(2);
+	    
+		}
 
 	}
 		
@@ -56,7 +60,6 @@ public class RecoilShootingEvent {
 		    progressCameraRecoil = 0F;
 			
 		}
-		
 	        
 	}
 		

@@ -2,14 +2,26 @@ package moguns;
 
 import com.mrcrayfish.guns.client.render.gun.ModelOverrides;
 
+import moguns.client.render.gun.model.AKMCustomModel;
 import moguns.client.render.gun.model.AKMModel;
 import moguns.client.render.gun.model.ASVALModel;
+import moguns.client.render.gun.model.AWPModel;
+import moguns.client.render.gun.model.BenelliModel;
 import moguns.client.render.gun.model.FamasModel;
 import moguns.client.render.gun.model.G36CModel;
+import moguns.client.render.gun.model.Glock17Model;
+import moguns.client.render.gun.model.M14EBRModel;
+import moguns.client.render.gun.model.M14Model;
+import moguns.client.render.gun.model.M1911Model;
 import moguns.client.render.gun.model.M1GarandModel;
+import moguns.client.render.gun.model.MossbergModel;
 import moguns.client.render.gun.model.ReflexSightModel;
-import moguns.client.render.gun.model.ScarModel;
+import moguns.client.render.gun.model.Remington870Model;
+import moguns.client.render.gun.model.ScarHModel;
+import moguns.client.render.gun.model.ScarLModel;
 import moguns.client.render.gun.model.ThompsonModel;
+import moguns.client.render.gun.model.VSSVintorezModel;
+import moguns.client.render.gun.model.WaltherPPKModel;
 import moguns.init.ItemInit;
 import moguns.init.SoundInit;
 import net.minecraft.item.ItemGroup;
@@ -36,9 +48,9 @@ public class MoGuns {
 		public ItemStack createIcon() {
 			
 			//Gets the gun item, unneeded if you're not gonna use a gun.
-			ItemStack stack = new ItemStack(ItemInit.SCARL.get());
+			ItemStack stack = new ItemStack(ItemInit.SCAR_L.get());
 			//Makes sure that the icon gun has full ammo so the durability bar doesn't show up.
-			stack.getOrCreateTag().putInt("AmmoCount", ItemInit.SCARL.get().getGun().getGeneral().getMaxAmmo());
+			stack.getOrCreateTag().putInt("AmmoCount", ItemInit.SCAR_L.get().getGun().getGeneral().getMaxAmmo());
 			//Returns the loaded gun icon.
 	        return stack;
 			
@@ -93,7 +105,7 @@ public class MoGuns {
 	private void onClientSetup(FMLClientSetupEvent event) {
 		
 		//Register all of our models.
-		ModelOverrides.register(ItemInit.SCARL.get(), new ScarModel());
+		ModelOverrides.register(ItemInit.SCAR_L.get(), new ScarLModel());
 		ModelOverrides.register(ItemInit.G36C.get(), new G36CModel());
 		ModelOverrides.register(ItemInit.AKM.get(), new AKMModel());
 		ModelOverrides.register(ItemInit.AS_VAL.get(), new ASVALModel());
@@ -101,6 +113,18 @@ public class MoGuns {
 		ModelOverrides.register(ItemInit.M1_GARAND.get(), new M1GarandModel());
 		ModelOverrides.register(ItemInit.REFLEX_SIGHT.get(), new ReflexSightModel());
 		ModelOverrides.register(ItemInit.THOMPSON.get(), new ThompsonModel());
+		ModelOverrides.register(ItemInit.AKM_CUSTOM.get(), new AKMCustomModel());
+		//ModelOverrides.register(ItemInit.AWP.get(), new AWPModel());
+		ModelOverrides.register(ItemInit.BENELLI.get(), new BenelliModel());
+		ModelOverrides.register(ItemInit.GLOCK17.get(), new Glock17Model());
+		ModelOverrides.register(ItemInit.M14_EBR.get(), new M14EBRModel());
+		ModelOverrides.register(ItemInit.M14.get(), new M14Model());
+		ModelOverrides.register(ItemInit.M1911.get(), new M1911Model());
+		ModelOverrides.register(ItemInit.MOSSBERG.get(), new MossbergModel());
+		ModelOverrides.register(ItemInit.REMINGTON_870.get(), new Remington870Model());
+		ModelOverrides.register(ItemInit.SCAR_H.get(), new ScarHModel());
+		ModelOverrides.register(ItemInit.VSS_VINTOREZ.get(), new VSSVintorezModel());
+		ModelOverrides.register(ItemInit.WALTHER_PPK.get(), new WaltherPPKModel());
 	        
 	}
 

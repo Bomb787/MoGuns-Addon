@@ -27,7 +27,7 @@ public class ItemInit {
 			MoGuns.MOD_ID);
 	
 	//Gun Items
-	public static final RegistryObject<GunItem> SCARL = ITEMS.register("scarl", 
+	public static final RegistryObject<GunItem> SCAR_L = ITEMS.register("scar_l", 
 			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
 	
 	public static final RegistryObject<BurstGunItem> G36C = ITEMS.register("g36c", 
@@ -57,6 +57,42 @@ public class ItemInit {
 	public static final RegistryObject<GarandGunItem> M1_GARAND = ITEMS.register("m1_garand",
 			() -> new GarandGunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
 	
+	public static final RegistryObject<GunItem> AKM_CUSTOM = ITEMS.register("akm_custom",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	/*public static final RegistryObject<GunItem> AWP = ITEMS.register("awp",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));*/
+	
+	public static final RegistryObject<GunItem> BENELLI = ITEMS.register("benelli",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> GLOCK17 = ITEMS.register("glock17",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> M14 = ITEMS.register("m14",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> M14_EBR = ITEMS.register("m14_ebr",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> M1911 = ITEMS.register("m1911",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> MOSSBERG = ITEMS.register("mossberg",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> REMINGTON_870 = ITEMS.register("remington_870",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> SCAR_H = ITEMS.register("scar_h",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> VSS_VINTOREZ = ITEMS.register("vss_vintorez",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<GunItem> WALTHER_PPK = ITEMS.register("walther_ppk",
+			() -> new GunItem(new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
+	
 	//Scope Items
 	public static final RegistryObject<ScopeItem> REFLEX_SIGHT = ITEMS.register("reflex_sight",
 			() -> new ScopeItem(Scope.create(0.1F, 2F, GunModifiers.SLOW_ADS).viewFinderOffset(0.3), new Item.Properties().maxStackSize(1).group(MoGuns.GROUP)));
@@ -75,6 +111,21 @@ public class ItemInit {
 			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
 
 	public static final RegistryObject<Item> AMMO9X19 = ITEMS.register("9x19",
+			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<Item> AMMO12GAUGE = ITEMS.register("12_gauge",
+			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<Item> AMMO12SLUG = ITEMS.register("slug",
+			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<Item> AMMO45ACP = ITEMS.register("45acp",
+			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<Item> AMMO3006 = ITEMS.register("3006",
+			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
+	
+	public static final RegistryObject<Item> AMMO762X39 = ITEMS.register("762x39",
 			() -> new AmmoItem(new Item.Properties().group(MoGuns.GROUP)));
 
 }
