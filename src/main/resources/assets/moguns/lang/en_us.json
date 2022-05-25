@@ -27,7 +27,7 @@
 	"subtitle.big_iron.pew": "Texas Red had not cleared leather...",
 	
 	//Guns
-	"item.moguns.scarl": "FN SCAR-L",
+	"item.moguns.scar_l": "FN SCAR-L",
 	"item.moguns.g36c": "G36C",
 	"item.moguns.big_iron": "Big Iron",
 	"item.moguns.trashcan": "Trash Can",
@@ -37,6 +37,19 @@
 	"item.moguns.m16a1": "M16A1",
 	"item.moguns.famas": "FAMAS",
 	"item.moguns.m1_garand": "M1 Garand",
+	"item.moguns.akm_custom": "AKM Custom",
+	"item.moguns.awp": "Arctic Warfare Police",
+	"item.moguns.baker_rifle": "Baker Rifle",
+	"item.moguns.benelli": "Benelli M4",
+	"item.moguns.glock17": "Glock 17",
+	"item.moguns.m14": "M14",
+	"item.moguns.m14_ebr": "M14 EBR",
+	"item.moguns.m1911": "M1911A1",
+	"item.moguns.mossberg": "Mossberg 590",
+	"item.moguns.remington_870": "Remington 870",
+	"item.moguns.scar_h": "FN SCAR-H",
+	"item.moguns.vss_vintorez": "VSS Vintorez",
+	"item.moguns.walther_ppk": "Walther PPK",
 
 	//Attachments
 	"item.moguns.reflex_sight": "Reflex Sight",
@@ -46,6 +59,11 @@
 	"item.moguns.556x45": "5.56x45 NATO",
 	"item.moguns.garbage": "Garbage",
 	"item.moguns.9x39": "9x39mm",
-	"item.moguns.9x19": "9x19mm"
+	"item.moguns.9x19": "9x19mm",
+	"item.moguns.12_gauge": "12 Gauge Buckshot",
+	"item.moguns.slug": "12 Gauge Slug",
+	"item.moguns.45acp": ".45 ACP",
+	"item.moguns.3006": ".30-06",
+	"item.moguns.762x39": "7.62x39mm"
 
 }
