@@ -2,27 +2,27 @@
   "parent": "moguns:weapons/root",
   "display": {
     "icon": {
-      "item": "moguns:big_iron"
+      "item": "moguns:baker_rifle"
     },
     "title": {
-      "translate": "advancements.moguns.getbigiron.title"
+      "translate": "advancements.moguns.getbaker.title"
     },
     "description": {
-      "translate": "advancements.moguns.getbigiron.description"
+      "translate": "advancements.moguns.getbaker.description"
     },
-    "frame": "challenge",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
-    "getbigiron": {
+    "getbaker": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "moguns:big_iron"
+              "moguns:baker_rifle"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "getbigiron"
+      "getbaker"
     ]
   ]
 }

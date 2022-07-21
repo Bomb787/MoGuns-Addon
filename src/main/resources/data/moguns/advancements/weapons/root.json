@@ -7,7 +7,7 @@
             "translate": "advancements.moguns.description"
         },
         "icon": {
-            "item": "moguns:scarl"
+            "item": "moguns:scar_l"
         },
         "show_toast": false,
         "announce_to_chat": false,

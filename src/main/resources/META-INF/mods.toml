@@ -1,10 +1,10 @@
 modLoader="javafml" #mandatory
-loaderVersion="[35,)" #mandatory
+loaderVersion="[40,)" #mandatory
 license="GNU GPLv3" #mandatory
 
 [[mods]]
 modId="moguns"
-version="1.6"
+version="1.7"
 displayName="Mo' Guns"
 authors="Code by Bomb787, art by AlanorMiga"
 credits="MrCrayfish, Bomb787, AlanorMiga"
@@ -21,24 +21,24 @@ description='A simple addon for MrCrayfishs Gun Mod'
 [[dependencies.moguns]]
     modId="forge"
     mandatory=true
-    versionRange="[32,)"
+    versionRange="[40,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.moguns]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.3,1.16.4,1.16.5,1.17)"
+    versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.moguns]]
     modId="cgm"
     mandatory=true
-    versionRange="[1.0.0,)"
+    versionRange="[1.2.5,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.moguns]]
-    modId="obfuscate"
+    modId="framework"
     mandatory=true
-    versionRange="[0.6.0,)"
+    versionRange="[0.2.3,)"
     ordering="NONE"
     side="BOTH"

@@ -1,0 +1,40 @@
+{
+    "general": {
+        "auto": true,
+        "rate": 3,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 32,
+        "reloadAmount": 4,
+        "recoilKick": 0.25,
+        "recoilAngle": 4,
+        "alwaysSpread": true,
+        "spread": 2.0
+    },
+    "projectile": {
+        "item": "moguns:9x19",
+        "visible": false,
+        "damage": 6.5,
+        "size": 0.2,
+        "speed": 30.0,
+        "life": 100
+    },
+    "sounds": {
+        "fire": "moguns:item.lanchester.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.lanchester.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 3.2,
+            "zOffset": -4
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.6,
+            "yOffset": 4.0,
+            "zOffset": 2.75
+        }
+    }
+}
+
