@@ -131,18 +131,6 @@
       { "name": "moguns:item/m1_garand_ping" }
     ]
   },
-  "item.awp.fire": {
-    "subtitle": "subtitle.cgm.fire",
-    "sounds": [
-      { "name": "moguns:item/awp_fire" }
-    ]
-  },
-  "item.awp.bolt": {
-    "subtitle": "subtitle.awp.bolt",
-    "sounds": [
-      { "name": "moguns:item/awp_fire" }
-    ]
-  },
   "item.benelli.fire": {
     "subtitle": "subtitle.cgm.fire",
     "sounds": [
@@ -221,5 +209,89 @@
     "sounds": [
       { "name": "moguns:item/remington_870_cock" }
     ]
-  }	
+  },
+  "item.uzi.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/uzi_fire" }
+    ]
+  },
+  "item.welrod.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/welrod_fire" }
+    ]
+  },
+  "item.welrod.cock": {
+    "subtitle": "subtitle.welrod.cock",
+    "sounds": [
+      { "name": "moguns:item/welrod_cock" }
+    ]
+  },
+  "item.glockest_glock.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/glockest_glock_fire" }
+    ]
+  },
+  "item.glockest_glock.cock": {
+    "subtitle": "subtitle.glockest_glock.cock",
+    "sounds": [
+      { "name": "moguns:item/glockest_glock_cock" }
+    ]
+  },
+  "item.glockest_glock.reload": {
+    "subtitle": "subtitle.glockest_glock.reload",
+    "sounds": [
+      { "name": "moguns:item/glockest_glock_reload" }
+    ]
+  },
+  "item.baker.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/baker_fire" }
+    ]
+  },
+  "item.baker.cock": {
+    "subtitle": "subtitle.baker.cock",
+    "sounds": [
+      { "name": "moguns:item/baker_cock" }
+    ]
+  },
+  "item.lanchester.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/lanchester_fire" }
+    ]
+  },
+  "item.lanchester.cock": {
+    "subtitle": "subtitle.lanchester.cock",
+    "sounds": [
+      { "name": "moguns:item/lanchester_cock" }
+    ]
+  },
+  "item.mp5.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/mp5_fire" }
+    ]
+  },
+  "item.mp5.cock": {
+    "subtitle": "subtitle.mp5.cock",
+    "sounds": [
+      { "name": "moguns:item/mp5_cock" }
+    ]
+  },
+  "item.ppsh_41.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/ppsh_41_fire" }
+    ]
+  },
+  "item.ppsh_41.cock": {
+    "subtitle": "subtitle.ppsh_41.cock",
+    "sounds": [
+      { "name": "moguns:item/ppsh_41_cock" }
+    ]
+  }
 }
