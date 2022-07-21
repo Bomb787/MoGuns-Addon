@@ -1,0 +1,21 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item":"moguns:musket_cartridge",
+        "count": 4
+    },
+    "materials": [
+	{
+            "item": "minecraft:paper",
+            "count": 1
+        },        
+	{
+            "item": "minecraft:iron_nugget",
+            "count": 3
+        },
+        {
+            "item": "minecraft:gunpowder",
+            "count": 2
+        }
+    ]
+}

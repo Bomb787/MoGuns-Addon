@@ -1,0 +1,16 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "moguns:glockest_glock"
+    },
+    "materials": [
+        {
+            "item": "minecraft:iron_ingot",
+            "count": 1
+        },
+        {
+            "item": "minecraft:black_dye",
+            "count": 1
+        }
+    ]
+}

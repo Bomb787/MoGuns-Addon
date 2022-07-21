@@ -1,0 +1,39 @@
+{
+    "general": {
+        "auto": true,
+        "rate": 1,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 71,
+        "reloadAmount": 10,
+        "recoilKick": 0.35,
+        "recoilAngle": 2.5,
+        "alwaysSpread": true,
+        "spread": 3.0
+    },
+    "projectile": {
+        "item": "moguns:762x39",
+        "visible": false,
+        "damage": 5.5,
+        "size": 0.2,
+        "speed": 30.0,
+        "life": 100
+    },
+    "sounds": {
+        "fire": "moguns:item.ppsh_41.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.ppsh_41.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 3,
+            "zOffset": -6.41
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.6,
+            "yOffset": 3.95,
+            "zOffset": 2.75
+        }
+    }
+}

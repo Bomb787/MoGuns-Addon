@@ -1,0 +1,24 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "moguns:lanchester"
+    },
+    "materials": [
+        {
+            "item": "minecraft:spruce_planks",
+            "count": 4
+        },
+	{
+            "item": "minecraft:gold_ingot",
+            "count": 1
+        },
+	{
+            "item": "minecraft:iron_ingot",
+            "count": 5
+        },
+	{
+            "item": "minecraft:black_dye",
+            "count": 1
+        }
+    ]
+}

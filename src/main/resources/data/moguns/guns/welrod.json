@@ -1,0 +1,38 @@
+{
+    "general": {
+        "auto": false,
+        "rate": 30,
+        "gripType": "cgm:one_handed",
+        "maxAmmo": 5,
+        "reloadAmount": 1,
+        "recoilKick": 0.3,
+        "recoilAngle": 2,
+        "alwaysSpread": true,
+        "spread": 2.0
+    },
+    "projectile": {
+        "item": "moguns:45acp",
+        "visible": false,
+        "damage": 10,
+        "size": 0.2,
+        "speed": 30.0,
+        "life": 30
+    },
+    "sounds": {
+        "fire": "moguns:item.welrod.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.welrod.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 3,
+            "zOffset": 3
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.7,
+            "yOffset": 3.7
+        }
+    }
+}

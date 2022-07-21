@@ -1,0 +1,35 @@
+{
+  "parent": "moguns:weapons/root",
+  "display": {
+    "icon": {
+      "item": "moguns:baker_rifle"
+    },
+    "title": {
+      "translate": "advancements.moguns.getbaker.title"
+    },
+    "description": {
+      "translate": "advancements.moguns.getbaker.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "getbaker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "moguns:baker_rifle"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "getbaker"
+    ]
+  ]
+}
