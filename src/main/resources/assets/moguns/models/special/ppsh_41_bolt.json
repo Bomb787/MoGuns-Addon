@@ -1,0 +1,100 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "moguns:items/ppsh_41",
+		"particle": "moguns:items/ppsh_41"
+	},
+	"elements": [
+		{
+			"name": "Cube 1",
+			"from": [8.5, 3, 13.8],
+			"to": [9, 3.2, 14],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 1.9152, 21.97347]},
+			"faces": {
+				"north": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"east": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"south": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"west": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"up": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"name": "Cube 2",
+			"from": [8.48, 2.885, 11.995],
+			"to": [8.49, 3.315, 15.34],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 1.9152, 21.97347]},
+			"faces": {
+				"north": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"east": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"south": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"west": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"up": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"name": "Cube 3",
+			"from": [8.7, 3.2, 13.8],
+			"to": [9, 3.3, 14],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 1.9152, 21.97347]},
+			"faces": {
+				"north": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"east": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"south": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"west": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"up": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [5.5, 4.5, 6.5, 5.5], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"name": "Cube 4",
+			"from": [7.6, 3.5002, 11.40347],
+			"to": [8.4, 3.5952, 13.58347],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 1.9152, 21.97347]},
+			"faces": {
+				"north": {"uv": [7.5, 5, 8, 5.5], "texture": "#2"},
+				"east": {"uv": [7.5, 5, 8, 5.5], "texture": "#2"},
+				"south": {"uv": [7.5, 5, 8, 5.5], "texture": "#2"},
+				"west": {"uv": [7.5, 5, 8, 5.5], "texture": "#2"},
+				"up": {"uv": [7.5, 5, 8, 5.5], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [7.5, 5, 8, 5.5], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, -6.75],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"firstperson_righthand": {
+			"translation": [-3.5, 8.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"translation": [3.75, -3.25, 0]
+		},
+		"ground": {
+			"translation": [0, 5, -1]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [1.25, 4.5, 0],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [-3.25, 11.25, -2],
+			"scale": [2, 2, 2]
+		}
+	},
+	"groups": [
+		{
+			"name": "Chamber",
+			"origin": [8, 1.9152, 21.97347],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}
