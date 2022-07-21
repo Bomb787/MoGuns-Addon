@@ -5,25 +5,35 @@ import java.util.Random;
 import com.mrcrayfish.guns.Config;
 import com.mrcrayfish.guns.client.handler.RecoilHandler;
 import com.mrcrayfish.guns.common.Gun;
-import com.mrcrayfish.guns.event.GunFireEvent.Post;
+import com.mrcrayfish.guns.event.GunFireEvent;
 import com.mrcrayfish.guns.event.GunFireEvent.Pre;
 import com.mrcrayfish.guns.item.GunItem;
 import com.mrcrayfish.guns.util.GunModifierHelper;
 
 import moguns.MoGuns;
 import net.minecraft.client.Minecraft;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 /*
- * This class adds functionality for horizontal recoil.
- * Would not have been possible without referencing Mr. Pineapple's code.
- * Author: Bomb787
+ * Adds functionality for horizontal recoil.
  */
 @Mod.EventBusSubscriber(modid = MoGuns.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class RecoilShootingEvent {
+	
+	private static RecoilShootingEvent instance;
+
+    public static RecoilShootingEvent get() {
+    	
+        if(instance == null)
+            instance = new RecoilShootingEvent();
+        
+        return instance;
+    }
+    
+    private RecoilShootingEvent() {}
 	
 	//Our variable, currently null but will be assigned either a 1 or 0 every time a gun is shot.
 	public static int recoilRand;
@@ -39,17 +49,20 @@ public class RecoilShootingEvent {
 		    recoilRand = new Random().nextInt(2);
 	    
 		}
-
+		
 	}
-		
+	
 	//These two variables determine the amount and progress of the recoil.
-	protected static float cameraRecoil;
-	protected static float progressCameraRecoil;
-		
+	private float cameraRecoil;
+	private float progressCameraRecoil;
+	
 	@SubscribeEvent
-	public static void recoil(Post event) {
+	public void onGunFire(GunFireEvent.Post event) {
 		
 		if(event.isClient()) {
+			
+			if(!Config.SERVER.enableCameraRecoil.get())
+	            return;
 			
 			ItemStack heldItem = event.getStack();
 			GunItem gunItem = (GunItem) heldItem.getItem();
@@ -60,56 +73,58 @@ public class RecoilShootingEvent {
 		    progressCameraRecoil = 0F;
 			
 		}
-	        
+	    
 	}
-		
+	
 	/*
 	This method is called multiple times after a gun is shot to smoothly move the recoil horizontally.
 	The recoilRand variable determines whether it moves left or right.
 	*/
-	
 	@SubscribeEvent
-	public static void onRenderTick(TickEvent.RenderTickEvent event) {
-	    	
+	public void onRenderTick(TickEvent.RenderTickEvent event) {
+	    
 	    if(!Config.SERVER.enableCameraRecoil.get())
 	        return;
-
+	    
 	    if(event.phase != TickEvent.Phase.END || cameraRecoil <= 0)
 	        return;
-
+	    
 	    Minecraft mc = Minecraft.getInstance();
 	    if(mc.player == null)
 	        return;
-
-	    float recoilAmount = cameraRecoil * mc.getTickLength() * 0.1F;
-	    float startProgress = progressCameraRecoil / cameraRecoil;
-	    float endProgress = (progressCameraRecoil + recoilAmount) / cameraRecoil;
-
+	    
+	    float recoilAmount = this.cameraRecoil * mc.getDeltaFrameTime() * 0.15F;
+        float startProgress = this.progressCameraRecoil / this.cameraRecoil;
+        float endProgress = (this.progressCameraRecoil + recoilAmount) / this.cameraRecoil;
+        
+        float yaw = mc.player.getYRot();
+        
 	    if(startProgress < 0.2F) {
-	        	
+	        
 	        if(recoilRand == 1)
-	        	mc.player.rotationYaw -= ((endProgress - startProgress) / 0.2F) * cameraRecoil/2;
+	        	mc.player.setYRot(yaw - ((endProgress - startProgress) / 0.2F) * this.cameraRecoil/2);
 	        else
-	        	mc.player.rotationYaw -= ((endProgress - startProgress) / 0.2F) * -cameraRecoil/2;
+	        	mc.player.setYRot(yaw + ((endProgress - startProgress) / 0.2F) * this.cameraRecoil/2);
 	            
 	    }
 	    else {
 	        	
 	        if(recoilRand == 1)
-	        	mc.player.rotationYaw -= ((endProgress - startProgress) / 0.8F) * -cameraRecoil/2;
+	        	mc.player.setYRot(yaw + ((endProgress - startProgress) / 0.8F) * this.cameraRecoil/2);
 	        else
-	        	mc.player.rotationYaw -= ((endProgress - startProgress) / 0.8F) * cameraRecoil/2;
+	        	mc.player.setYRot(yaw - ((endProgress - startProgress) / 0.8F) * this.cameraRecoil/2);
 	            
 	    }
-
-	    progressCameraRecoil += recoilAmount;
-
-	    if(progressCameraRecoil >= cameraRecoil) {
+	    
+	    this.progressCameraRecoil += recoilAmount;
+	    
+	    if(this.progressCameraRecoil >= this.cameraRecoil) {
 	        	
-	        cameraRecoil = 0;
-	        progressCameraRecoil = 0;
+	        this.cameraRecoil = 0;
+	        this.progressCameraRecoil = 0;
 	            
 	    }
-	        
+	       
 	}
+	
 }
