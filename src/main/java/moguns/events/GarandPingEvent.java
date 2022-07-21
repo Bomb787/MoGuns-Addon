@@ -11,6 +11,9 @@ import net.minecraft.util.SoundCategory;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+/**
+ * Adds a ping sound when the Garand is empty
+ */
 @Mod.EventBusSubscriber(modid = MoGuns.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class GarandPingEvent {
 	
@@ -18,7 +21,7 @@ public class GarandPingEvent {
     public static void postShoot(Post event) {
 		
         PlayerEntity player = event.getPlayer();
-        ItemStack heldItem = player.getHeldItemMainhand();
+        ItemStack heldItem = player.getMainHandItem();
         CompoundNBT tag = heldItem.getTag();
     	
     	if(!(heldItem.getItem() instanceof GarandGunItem))
@@ -29,7 +32,7 @@ public class GarandPingEvent {
     		int ammo = tag.getInt("AmmoCount");
     		
     		if(ammo == 1)
-    			event.getPlayer().getEntityWorld().playSound(player, player.getPosition(), SoundInit.GARAND_PING.get(), SoundCategory.MASTER, 3.0F, 1.0F);
+    			event.getPlayer().level.playSound(player, player.blockPosition(), SoundInit.GARAND_PING.get(), SoundCategory.MASTER, 3.0F, 1.0F);
     		
     	}
     	

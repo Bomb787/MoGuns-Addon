@@ -11,20 +11,13 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-/*
- * This class will be used to register special models (like the grenade launcher)
- * We can 'copy' from the SpecialModels class in the base gun mod as there
- * isn't an interface provided to implement.
- */
-
 /**
- * Author: Mr. Pineapple and Bomb787
+ * This class will be used to register special models to be used in animations, like the drum of the grenade launcher in the default mod.
  */
 @EventBusSubscriber(modid = MoGuns.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
 public enum SpecialModels {
 	
 	//The values in this class are stored here so we can call upon them.
-	SCAR_L("scar_l"),
 	LIGHT_SCAR_L_STOCK("light_scar_l_stock"),
 	TACTICAL_SCAR_L_STOCK("tactical_scar_l_stock"),
 	HEAVY_SCAR_L_STOCK("heavy_scar_l_stock"),
@@ -59,7 +52,6 @@ public enum SpecialModels {
     FAMAS_CHARGING_HANDLE("famas_charging_handle"),
     M1_GARAND_MAIN("m1_garand_main"),
     M1_GARAND_CHARGING_HANDLE("m1_garand_charging_handle"),
-    M1_GARAND_MAGAZINE("m1_garand_magazine"),
     GLOCK_17_MAIN("glock_17_main"),
     GLOCK_17_SLIDE("glock_17_slide"),
     REMINGTON_870_MAIN("remington_870_main"),
@@ -82,9 +74,13 @@ public enum SpecialModels {
     HEAVY_M14_EBR_STOCK("heavy_m14_ebr_stock"),
     WALTHER_PPK_MAIN("walther_ppk_main"),
     WALTHER_PPK_SLIDE("walther_ppk_slide"),
-    AWP_MAIN("awp_main"),
-    AWP_BOLT("awp_bolt"),
-    REFLEX_SIGHT("reflex_sight");
+    REFLEX_SIGHT("reflex_sight"),
+    WELROD_MAIN("welrod_main"),
+    WELROD_BOLT("welrod_bolt"),
+    LANCHESTER_MAIN("lanchester_main"),
+    LANCHESTER_BOLT("lanchester_bolt"),
+    PPSH_41_MAIN("ppsh_41_main"),
+    PPSH_41_BOLT("ppsh_41_bolt");
 	
 	//Variables
     private final ResourceLocation modelLocation;

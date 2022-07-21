@@ -18,9 +18,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 /*
- * This class adds functionality for horizontal recoil.
- * Would not have been possible without referencing Mr. Pineapple's code.
- * Author: Bomb787
+ * Adds functionality for horizontal recoil.
  */
 @Mod.EventBusSubscriber(modid = MoGuns.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class RecoilShootingEvent {
@@ -81,24 +79,24 @@ public class RecoilShootingEvent {
 	    if(mc.player == null)
 	        return;
 
-	    float recoilAmount = cameraRecoil * mc.getTickLength() * 0.1F;
+	    float recoilAmount = cameraRecoil * mc.getDeltaFrameTime() * 0.1F;
 	    float startProgress = progressCameraRecoil / cameraRecoil;
 	    float endProgress = (progressCameraRecoil + recoilAmount) / cameraRecoil;
 
 	    if(startProgress < 0.2F) {
 	        	
 	        if(recoilRand == 1)
-	        	mc.player.rotationYaw -= ((endProgress - startProgress) / 0.2F) * cameraRecoil/2;
+	        	mc.player.yRot -= ((endProgress - startProgress) / 0.2F) * cameraRecoil/2;
 	        else
-	        	mc.player.rotationYaw -= ((endProgress - startProgress) / 0.2F) * -cameraRecoil/2;
+	        	mc.player.yRot -= ((endProgress - startProgress) / 0.2F) * -cameraRecoil/2;
 	            
 	    }
 	    else {
 	        	
 	        if(recoilRand == 1)
-	        	mc.player.rotationYaw -= ((endProgress - startProgress) / 0.8F) * -cameraRecoil/2;
+	        	mc.player.yRot -= ((endProgress - startProgress) / 0.8F) * -cameraRecoil/2;
 	        else
-	        	mc.player.rotationYaw -= ((endProgress - startProgress) / 0.8F) * cameraRecoil/2;
+	        	mc.player.yRot -= ((endProgress - startProgress) / 0.8F) * cameraRecoil/2;
 	            
 	    }
 

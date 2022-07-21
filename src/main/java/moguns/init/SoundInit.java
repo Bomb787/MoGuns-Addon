@@ -8,8 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 /**
- * This class is where all of the mod's sounds are registered
- * Author: Bomb787
+ * This class is where all of the mod's sounds are registered.
  */
 public class SoundInit {
 	
@@ -19,11 +18,11 @@ public class SoundInit {
      */
 	public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MoGuns.MOD_ID);
 	
-	public static final RegistryObject<SoundEvent> SCARL_FIRE = register("item.scarl.fire");
+	public static final RegistryObject<SoundEvent> SCAR_L_FIRE = register("item.scar_l.fire");
 	
-	public static final RegistryObject<SoundEvent> SCARL_FIRE_SUPPRESSED = register("item.scarl.suppressed_fire");
+	public static final RegistryObject<SoundEvent> SCAR_L_FIRE_SUPPRESSED = register("item.scar_l.suppressed_fire");
 	
-	public static final RegistryObject<SoundEvent> SCARL_COCK = register("item.scarl.cock");
+	public static final RegistryObject<SoundEvent> SCAR_L_COCK = register("item.scar_l.cock");
 	
 	public static final RegistryObject<SoundEvent> G36C_FIRE = register("item.g36c.fire");
 	
@@ -92,6 +91,30 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> REMINGTON_870_FIRE = register("item.remington_870.fire");
 	
 	public static final RegistryObject<SoundEvent> REMINGTON_870_COCK = register("item.remington_870.cock");
+	
+	public static final RegistryObject<SoundEvent> UZI_FIRE = register("item.uzi.fire");
+	
+	public static final RegistryObject<SoundEvent> GLOCKEST_GLOCK_FIRE = register("item.glockest_glock.fire");
+	
+	public static final RegistryObject<SoundEvent> GLOCKEST_GLOCK_COCK = register("item.glockest_glock.cock");
+	
+	public static final RegistryObject<SoundEvent> GLOCKEST_GLOCK_RELOAD = register("item.glockest_glock.reload");
+	
+	public static final RegistryObject<SoundEvent> BAKER_FIRE = register("item.baker.fire");
+	
+	public static final RegistryObject<SoundEvent> BAKER_COCK = register("item.baker.cock");
+	
+	public static final RegistryObject<SoundEvent> LANCHESTER_FIRE = register("item.lanchester.fire");
+	
+	public static final RegistryObject<SoundEvent> LANCHESTER_COCK = register("item.lanchester.cock");
+	
+	public static final RegistryObject<SoundEvent> MP5_FIRE = register("item.mp5.fire");
+	
+	public static final RegistryObject<SoundEvent> MP5_COCK = register("item.mp5.cock");
+	
+	public static final RegistryObject<SoundEvent> PPSH_FIRE = register("item.ppsh_41.fire");
+	
+	public static final RegistryObject<SoundEvent> PPSH_COCK = register("item.ppsh_41.cock");
 	
 	//Method to help us register sounds
 	private static RegistryObject<SoundEvent> register(String key) {
