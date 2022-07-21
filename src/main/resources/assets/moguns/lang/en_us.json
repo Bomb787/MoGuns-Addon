@@ -8,6 +8,8 @@
 	"advancements.moguns.minigun.description": "It costs 4 stacks of emeralds to fire this gun...for twelve seconds.",
 	"advancements.moguns.getbigiron.title": "Arizona Ranger",
 	"advancements.moguns.getbigiron.description": "To the town of Agua Fria rode a stranger one fine day...",
+	"advancements.moguns.getbaker.title": "O'er the hills and o'er the main",
+	"advancements.moguns.getbaker.description": "Through Flanders, Portugal, and Spain...",
 	
 	//Creative Tab
 	"itemGroup.moguns": "Mo' Guns",
@@ -25,6 +27,11 @@
 	"subtitle.trashcan.boom": "RIP Headphone Users",
 	"subtitle.trashcan.reload": "Polish guys laughing",
 	"subtitle.big_iron.pew": "Texas Red had not cleared leather...",
+	"subtitle.welrod.cock": "Welrod Cocking",
+	"subtitle.baker.cock": "Baker Rifle Cocking",
+	"subtitle.lanchester.cock": "Lanchester SMG Cocking",
+	"subtitle.mp5.cock": "MP5 Cocking",
+	"subtitle.ppsh_41.cock": "PPSh-41 Cocking",
 	
 	//Guns
 	"item.moguns.scar_l": "FN SCAR-L",
@@ -38,7 +45,6 @@
 	"item.moguns.famas": "FAMAS",
 	"item.moguns.m1_garand": "M1 Garand",
 	"item.moguns.akm_custom": "AKM Custom",
-	"item.moguns.awp": "Arctic Warfare Police",
 	"item.moguns.baker_rifle": "Baker Rifle",
 	"item.moguns.benelli": "Benelli M4",
 	"item.moguns.glock17": "Glock 17",
@@ -50,6 +56,14 @@
 	"item.moguns.scar_h": "FN SCAR-H",
 	"item.moguns.vss_vintorez": "VSS Vintorez",
 	"item.moguns.walther_ppk": "Walther PPK",
+	"item.moguns.uzi": "Uzi",
+	"item.moguns.welrod": "Welrod",
+	"item.moguns.glockest_glock": "\"Glock\"",
+	"item.moguns.baker": "Baker Rifle",
+	"item.moguns.lanchester": "Lanchester SMG",
+	"item.moguns.mp5": "MP5A4",
+	"item.moguns.ppsh_41": "PPSh-41",
+	"item.moguns.micro_uzi": "Micro Uzi",
 
 	//Attachments
 	"item.moguns.reflex_sight": "Reflex Sight",
@@ -64,6 +78,8 @@
 	"item.moguns.slug": "12 Gauge Slug",
 	"item.moguns.45acp": ".45 ACP",
 	"item.moguns.3006": ".30-06",
-	"item.moguns.762x39": "7.62x39mm"
+	"item.moguns.762x39": "7.62x39mm",
+	"item.moguns.musket_cartridge": "Musket Cartridge",
+	"item.moguns.762x25": "7.62x25 Tokarev"
 
 }
