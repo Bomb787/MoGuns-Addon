@@ -11,7 +11,7 @@
         "spread": 3.0
     },
     "projectile": {
-        "item": "moguns:762x39",
+        "item": "moguns:762x25",
         "visible": false,
         "damage": 5.5,
         "size": 0.2,
