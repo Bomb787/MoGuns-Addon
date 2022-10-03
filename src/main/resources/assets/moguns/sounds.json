@@ -293,5 +293,23 @@
     "sounds": [
       { "name": "moguns:item/ppsh_41_cock" }
     ]
+  },
+  "item.wrapped_rifle.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/wrapped_rifle_fire" }
+    ]
+  },
+  "item.wrapped_rifle.cock": {
+    "subtitle": "subtitle.wrapped_rifle.cock",
+    "sounds": [
+      { "name": "moguns:item/wrapped_rifle_cock" }
+    ]
+  },
+  "item.hellfire.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/hellfire_fire" }
+    ]
   }
 }
