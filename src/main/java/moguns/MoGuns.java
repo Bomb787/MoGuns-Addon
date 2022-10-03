@@ -1,14 +1,19 @@
 package moguns;
 
 import com.mrcrayfish.guns.client.render.gun.ModelOverrides;
+import com.mrcrayfish.guns.common.ProjectileManager;
 
 import moguns.client.render.gun.model.AKMCustomModel;
 import moguns.client.render.gun.model.AKMModel;
 import moguns.client.render.gun.model.ASVALModel;
 import moguns.client.render.gun.model.BenelliModel;
+import moguns.client.render.gun.model.BlueHeatModel;
+import moguns.client.render.gun.model.ButterflyModel;
 import moguns.client.render.gun.model.FamasModel;
 import moguns.client.render.gun.model.G36CModel;
 import moguns.client.render.gun.model.Glock17Model;
+import moguns.client.render.gun.model.HellfireModel;
+import moguns.client.render.gun.model.HogBonkerModel;
 import moguns.client.render.gun.model.LanchesterModel;
 import moguns.client.render.gun.model.M14EBRModel;
 import moguns.client.render.gun.model.M14Model;
@@ -24,7 +29,10 @@ import moguns.client.render.gun.model.ThompsonModel;
 import moguns.client.render.gun.model.VSSVintorezModel;
 import moguns.client.render.gun.model.WaltherPPKModel;
 import moguns.client.render.gun.model.WelrodModel;
+import moguns.client.render.gun.model.WrappedRifleModel;
+import moguns.entities.TakiProjectileEntity;
 import moguns.events.RecoilShootingEvent;
+import moguns.init.EntityInit;
 import moguns.init.ItemInit;
 import moguns.init.SoundInit;
 import net.minecraft.world.item.CreativeModeTab;
@@ -70,16 +78,19 @@ public class MoGuns {
 		//Registers all of the Deferred Registers from our init classes.
 		ItemInit.ITEMS.register(bus);
 		SoundInit.SOUNDS.register(bus);
+		EntityInit.ENTITIES.register(bus);
 		
 		bus.addListener(this::onClientSetup);
 		
 	}
 	
-	//This is the common setup event, it doesn't do much for this addon.
+	//This is the common setup event, only really registers the Taki entity to the item
 	private void setup(final FMLCommonSetupEvent event) {
 			
 		System.out.println("MoGuns preinit, if you're reading this then I hope you're having a nice day :)");
 		System.out.println("Slava Ukraini! Heroiam Slava!");
+		
+		ProjectileManager.getInstance().registerFactory(ItemInit.AMMO_TAKI.get(), ((world, livingEntity, itemStack, gunItem, gun) -> new TakiProjectileEntity(EntityInit.TAKI.get(), world, livingEntity, itemStack, gunItem, gun)));
 			
 	}
 	
@@ -110,6 +121,11 @@ public class MoGuns {
 		ModelOverrides.register(ItemInit.WELROD.get(), new WelrodModel());
 		ModelOverrides.register(ItemInit.LANCHESTER.get(), new LanchesterModel());
 		ModelOverrides.register(ItemInit.PPSH.get(), new PPSH41Model());
+		ModelOverrides.register(ItemInit.BUTTERFLY_GUN.get(), new ButterflyModel());
+		ModelOverrides.register(ItemInit.WRAPPED_RIFLE.get(), new WrappedRifleModel());
+		ModelOverrides.register(ItemInit.HELLFIRE.get(), new HellfireModel());
+		ModelOverrides.register(ItemInit.BLUE_HEAT.get(), new BlueHeatModel());
+		ModelOverrides.register(ItemInit.HOG_BONKER.get(), new HogBonkerModel());
 		
 		MinecraftForge.EVENT_BUS.register(RecoilShootingEvent.get());
 	        
