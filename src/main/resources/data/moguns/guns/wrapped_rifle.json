@@ -1,0 +1,46 @@
+{
+    "general": {
+        "auto": true,
+        "rate": 3,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 40,
+        "reloadAmount": 10,
+        "recoilKick": 0.25,
+        "recoilAngle": 1,
+        "alwaysSpread": true,
+        "spread": 1.5
+    },
+    "projectile": {
+        "item": "moguns:x_mas_light",
+        "visible": false,
+        "damage": 3.5,
+        "size": 0.2,
+        "speed": 7.0,
+        "gravity": true,
+        "life": 100
+    },
+    "sounds": {
+        "fire": "moguns:item.wrapped_rifle.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.wrapped_rifle.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 2.9,
+            "zOffset": -8.41
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.6,
+            "yOffset": 4.8,
+            "zOffset": 2.75
+        },
+        "attachments": {
+            "scope": {
+                "yOffset": 4.3,
+                "zOffset": 4.0
+            }
+        }
+    }
+}

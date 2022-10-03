@@ -1,0 +1,55 @@
+{
+    "general": {
+        "auto": true,
+        "rate": 3,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 22,
+        "reloadAmount": 4,
+        "recoilKick": 0.25,
+        "recoilAngle": 4,
+        "alwaysSpread": false,
+        "spread": 5.0
+    },
+    "projectile": {
+        "item": "moguns:taki",
+        "visible": false,
+        "damage": 5,
+        "size": 0.2,
+        "speed": 7.0,
+        "life": 100
+    },
+    "sounds": {
+        "fire": "moguns:item.hellfire.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.akm.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 3.5,
+            "zOffset": -7,
+            "size": 1
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.6,
+            "yOffset": 4.9,
+            "zOffset": 2.75
+        },
+        "attachments": {
+            "scope": {
+                "yOffset": 4.5,
+                "zOffset": 4.0
+            },
+            "stock": {
+                "yOffset": 3.6,
+                "zOffset": 8.2,
+                "scale": 0.0
+            },
+            "underBarrel": {
+                "yOffset": 2.799,
+                "zOffset": -1.0
+            }
+        }
+    }
+}

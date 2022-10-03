@@ -1,0 +1,41 @@
+{
+    "general": {
+        "auto": false,
+        "rate": 1,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 2,
+        "reloadAmount": 1,
+        "recoilKick": 0.25,
+        "recoilAngle": 10,
+        "projectileAmount": 20,
+        "alwaysSpread": true,
+        "spread": 35.0
+    },
+    "projectile": {
+        "item": "moguns:12_gauge",
+        "visible": false,
+        "damage": 26.0,
+        "size": 0.2,
+        "speed": 3,
+        "life": 5
+    },
+    "sounds": {
+        "fire": "moguns:item.mossberg.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.remington_870.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 3,
+            "zOffset": -2,
+            "size": 1
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.6,
+            "yOffset": 3.4,
+            "zOffset": 2.75
+        }
+    }
+}

@@ -1,37 +1,40 @@
 {
     "general": {
         "auto": false,
-        "rate": 30,
+        "rate": 3,
         "gripType": "cgm:one_handed",
-        "maxAmmo": 5,
-        "reloadAmount": 1,
-        "recoilKick": 0.3,
+        "maxAmmo": 13,
+        "reloadAmount": 4,
+        "recoilKick": 0.55,
         "recoilAngle": 2,
-        "alwaysSpread": true,
-        "spread": 2.0
+        "alwaysSpread": false,
+        "spread": 3.0
     },
     "projectile": {
         "item": "moguns:45acp",
         "visible": false,
-        "damage": 10,
+        "damage": 7.5,
         "size": 0.2,
         "speed": 30.0,
         "life": 30
     },
     "sounds": {
-        "fire": "moguns:item.welrod.fire",
+        "fire": "moguns:item.glock.fire",
         "reload": "cgm:item.pistol.reload",
-        "cock": "moguns:item.welrod.cock"
+        "cock": "moguns:item.glock.cock"
     },
     "display": {
         "flash": {
-            "yOffset": 3
+            "yOffset": 3,
+            "zOffset": 3
         }
     },
     "modules": {
         "zoom": {
             "fovModifier": 0.7,
-            "yOffset": 3.7
+            "yOffset": 4
+        },
+        "attachments": {
         }
     }
 }
