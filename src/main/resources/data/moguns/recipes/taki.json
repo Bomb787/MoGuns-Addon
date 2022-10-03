@@ -1,19 +1,19 @@
 {
     "type": "cgm:workbench",
     "result": {
-        "item": "moguns:reflex_sight"
+        "item": "moguns:taki","count": 8
     },
     "materials": [
         {
-            "item": "minecraft:iron_ingot",
+            "item": "minecraft:wheat",
             "count": 1
         },
         {
-            "item": "minecraft:glass_pane",
+            "item": "minecraft:blaze_powder",
             "count": 1
         },
-		{
-            "item": "minecraft:redstone",
+        {
+            "item": "minecraft:red_dye",
             "count": 1
         }
     ]

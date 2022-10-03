@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "moguns:big_iron"
-            ]
+            "item": "moguns:big_iron"
           }
         ]
       }

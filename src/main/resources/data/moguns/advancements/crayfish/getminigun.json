@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "cgm:mini_gun"
-            ]
+            "item": "cgm:mini_gun"
           }
         ]
       }

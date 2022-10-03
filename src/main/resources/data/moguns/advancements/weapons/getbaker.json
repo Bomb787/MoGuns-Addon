@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "moguns:baker_rifle"
-            ]
+            "item": "moguns:baker_rifle"
           }
         ]
       }
