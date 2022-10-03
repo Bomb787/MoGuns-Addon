@@ -32,6 +32,7 @@
 	"subtitle.lanchester.cock": "Lanchester SMG Cocking",
 	"subtitle.mp5.cock": "MP5 Cocking",
 	"subtitle.ppsh_41.cock": "PPSh-41 Cocking",
+	"subtitle.wrapped_rifle.cock": "Wrapped Rifle Cocking",
 	
 	//Guns
 	"item.moguns.scar_l": "FN SCAR-L",
@@ -64,6 +65,12 @@
 	"item.moguns.mp5": "MP5A4",
 	"item.moguns.ppsh_41": "PPSh-41",
 	"item.moguns.micro_uzi": "Micro Uzi",
+	"item.moguns.double_barrel": "Double Barrel Shotgun",
+	"item.moguns.butterfly_gun": "Butterfly's Monarchy",
+	"item.moguns.wrapped_rifle": "Wrapped Rifle",
+	"item.moguns.hellfire": "Hellfire",
+	"item.moguns.blue_heat": "Blue Heat",
+	"item.moguns.hog_bonker": "Hog Bönker",
 
 	//Attachments
 	"item.moguns.reflex_sight": "Reflex Sight",
@@ -80,6 +87,11 @@
 	"item.moguns.3006": ".30-06",
 	"item.moguns.762x39": "7.62x39mm",
 	"item.moguns.musket_cartridge": "Musket Cartridge",
-	"item.moguns.762x25": "7.62x25 Tokarev"
+	"item.moguns.762x25": "7.62x25 Tokarev",
+	"item.moguns.x_mas_light": "X-mas Light",
+	"item.moguns.taki": "Taki",
+	
+	//Entities
+	"entity.moguns.taki": "Taki"
 
 }
