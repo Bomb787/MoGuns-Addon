@@ -1,14 +1,20 @@
 package moguns;
 
+import com.mrcrayfish.guns.client.render.entity.ProjectileRenderer;
 import com.mrcrayfish.guns.client.render.gun.ModelOverrides;
+import com.mrcrayfish.guns.common.ProjectileManager;
 
 import moguns.client.render.gun.model.AKMCustomModel;
 import moguns.client.render.gun.model.AKMModel;
 import moguns.client.render.gun.model.ASVALModel;
 import moguns.client.render.gun.model.BenelliModel;
+import moguns.client.render.gun.model.BlueHeatModel;
+import moguns.client.render.gun.model.ButterflyModel;
 import moguns.client.render.gun.model.FamasModel;
 import moguns.client.render.gun.model.G36CModel;
 import moguns.client.render.gun.model.Glock17Model;
+import moguns.client.render.gun.model.HellfireModel;
+import moguns.client.render.gun.model.HogBonkerModel;
 import moguns.client.render.gun.model.LanchesterModel;
 import moguns.client.render.gun.model.M14EBRModel;
 import moguns.client.render.gun.model.M14Model;
@@ -24,12 +30,16 @@ import moguns.client.render.gun.model.ThompsonModel;
 import moguns.client.render.gun.model.VSSVintorezModel;
 import moguns.client.render.gun.model.WaltherPPKModel;
 import moguns.client.render.gun.model.WelrodModel;
+import moguns.client.render.gun.model.WrappedRifleModel;
+import moguns.entities.TakiProjectileEntity;
+import moguns.init.EntityInit;
 import moguns.init.ItemInit;
 import moguns.init.SoundInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -69,21 +79,26 @@ public class MoGuns {
 		//Registers all of the Deferred Registers from our init classes.
 		ItemInit.ITEMS.register(bus);
 		SoundInit.SOUNDS.register(bus);
+		EntityInit.ENTITIES.register(bus);
 		
 		bus.addListener(this::onClientSetup);
 		
 	}
 	
-	//This is the common setup event, it doesn't do much for this addon.
+	//This is the common setup event, only really registers the Taki entity to the item
 	private void setup(final FMLCommonSetupEvent event) {
 			
 		System.out.println("MoGuns preinit, if you're reading this then I hope you're having a nice day :)");
 		System.out.println("Slava Ukraini! Heroiam Slava!");
+		
+		ProjectileManager.getInstance().registerFactory(ItemInit.AMMO_TAKI.get(), ((world, livingEntity, itemStack, gunItem, gun) -> new TakiProjectileEntity(EntityInit.TAKI.get(), world, livingEntity, itemStack, gunItem, gun)));
 			
 	}
 	
 	//This is the client setup event.
 	private void onClientSetup(FMLClientSetupEvent event) {
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityInit.TAKI.get(), ProjectileRenderer::new);
 		
 		//Register all of our models.
 		ModelOverrides.register(ItemInit.SCAR_L.get(), new ScarLModel());
@@ -95,7 +110,6 @@ public class MoGuns {
 		ModelOverrides.register(ItemInit.REFLEX_SIGHT.get(), new ReflexSightModel());
 		ModelOverrides.register(ItemInit.THOMPSON.get(), new ThompsonModel());
 		ModelOverrides.register(ItemInit.AKM_CUSTOM.get(), new AKMCustomModel());
-		//ModelOverrides.register(ItemInit.AWP.get(), new AWPModel());
 		ModelOverrides.register(ItemInit.BENELLI.get(), new BenelliModel());
 		ModelOverrides.register(ItemInit.GLOCK17.get(), new Glock17Model());
 		ModelOverrides.register(ItemInit.M14_EBR.get(), new M14EBRModel());
@@ -109,6 +123,11 @@ public class MoGuns {
 		ModelOverrides.register(ItemInit.WELROD.get(), new WelrodModel());
 		ModelOverrides.register(ItemInit.LANCHESTER.get(), new LanchesterModel());
 		ModelOverrides.register(ItemInit.PPSH.get(), new PPSH41Model());
+		ModelOverrides.register(ItemInit.BUTTERFLY_GUN.get(), new ButterflyModel());
+		ModelOverrides.register(ItemInit.WRAPPED_RIFLE.get(), new WrappedRifleModel());
+		ModelOverrides.register(ItemInit.HELLFIRE.get(), new HellfireModel());
+		ModelOverrides.register(ItemInit.BLUE_HEAT.get(), new BlueHeatModel());
+		ModelOverrides.register(ItemInit.HOG_BONKER.get(), new HogBonkerModel());
 	        
 	}
 

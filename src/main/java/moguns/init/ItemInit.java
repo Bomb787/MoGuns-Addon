@@ -8,7 +8,10 @@ import com.mrcrayfish.guns.item.attachment.impl.Scope;
 
 import moguns.MoGuns;
 import moguns.items.GarandGunItem;
+import net.minecraft.item.Food;
 import net.minecraft.item.Item;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -58,9 +61,6 @@ public class ItemInit {
 	
 	public static final RegistryObject<GunItem> AKM_CUSTOM = ITEMS.register("akm_custom",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
-	
-	/*public static final RegistryObject<GunItem> AWP = ITEMS.register("awp",
-			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));*/
 	
 	public static final RegistryObject<GunItem> BENELLI = ITEMS.register("benelli",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
@@ -116,6 +116,24 @@ public class ItemInit {
 	public static final RegistryObject<GunItem> MICRO_UZI = ITEMS.register("micro_uzi",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 	
+	public static final RegistryObject<GunItem> DOUBLE_BARREL = ITEMS.register("double_barrel",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+
+	public static final RegistryObject<GunItem> BUTTERFLY_GUN = ITEMS.register("butterfly_gun",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+
+	public static final RegistryObject<GunItem> WRAPPED_RIFLE = ITEMS.register("wrapped_rifle",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+
+	public static final RegistryObject<GunItem> HELLFIRE = ITEMS.register("hellfire",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+
+	public static final RegistryObject<GunItem> BLUE_HEAT = ITEMS.register("blue_heat",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+
+	public static final RegistryObject<GunItem> HOG_BONKER = ITEMS.register("hog_bonker",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+	
 	//Scope Items
 	public static final RegistryObject<ScopeItem> REFLEX_SIGHT = ITEMS.register("reflex_sight",
 			() -> new ScopeItem(Scope.create(0.1F, 2F, GunModifiers.SLOW_ADS).viewFinderOffset(0.3), new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
@@ -151,10 +169,18 @@ public class ItemInit {
 	public static final RegistryObject<Item> AMMO762X39 = ITEMS.register("762x39",
 			() -> new AmmoItem(new Item.Properties().tab(MoGuns.GROUP)));
 	
-	public static final RegistryObject<Item> AMMOMUSKETCARTRIDGE = ITEMS.register("musket_cartridge",
+	public static final RegistryObject<Item> AMMO_MUSKET_CARTRIDGE = ITEMS.register("musket_cartridge",
 			() -> new AmmoItem(new Item.Properties().tab(MoGuns.GROUP)));
 	
 	public static final RegistryObject<Item> AMMO762X25 = ITEMS.register("762x25",
 			() -> new AmmoItem(new Item.Properties().tab(MoGuns.GROUP)));
+	
+	public static final RegistryObject<Item> AMMO_XMAS_LIGHT = ITEMS.register("x_mas_light",
+			() -> new AmmoItem(new Item.Properties().stacksTo(64).tab(MoGuns.GROUP)));
+	
+	public static final Food TAKI = (new Food.Builder()).nutrition(4).saturationMod(0.1F).effect(() -> new EffectInstance(Effects.FIRE_RESISTANCE, 40, 1), 1.0F).fast().build();
+	
+	public static final RegistryObject<Item> AMMO_TAKI = ITEMS.register("taki",
+			() -> new AmmoItem(new Item.Properties().stacksTo(64).tab(MoGuns.GROUP).food(TAKI)));
 
 }

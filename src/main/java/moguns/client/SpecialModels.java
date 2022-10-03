@@ -80,7 +80,23 @@ public enum SpecialModels {
     LANCHESTER_MAIN("lanchester_main"),
     LANCHESTER_BOLT("lanchester_bolt"),
     PPSH_41_MAIN("ppsh_41_main"),
-    PPSH_41_BOLT("ppsh_41_bolt");
+    PPSH_41_BOLT("ppsh_41_bolt"),
+    BUTTERFLY_GUN_MAIN("butterfly_gun_main"),
+    BUTTERFLY_GUN_SLIDE("butterfly_gun_slide"),
+    WRAPPED_RIFLE_MAIN("wrapped_rifle_main"),
+    WRAPPED_RIFLE_CHAMBER("wrapped_rifle_chamber"),
+    HELLFIRE_MAIN("hellfire_main"),
+    HELLFIRE_SLIDE("hellfire_slide"),
+    LIGHT_HELLFIRE_STOCK("light_hellfire_stock"),
+    TACTICAL_HELLFIRE_STOCK("tactical_hellfire_stock"),
+    HEAVY_HELLFIRE_STOCK("heavy_hellfire_stock"),
+    BLUE_HEAT_MAIN("blue_heat_main"),
+    BLUE_HEAT_SLIDE("blue_heat_slide"),
+    LIGHT_BLUE_HEAT_STOCK("light_blue_heat_stock"),
+    TACTICAL_BLUE_HEAT_STOCK("tactical_blue_heat_stock"),
+    HEAVY_BLUE_HEAT_STOCK("heavy_blue_heat_stock"),
+    HOG_BONKER_MAIN("hog_bonker_main"),
+    HOG_BONKER_BARRELS("hog_bonker_barrels");
 	
 	//Variables
     private final ResourceLocation modelLocation;

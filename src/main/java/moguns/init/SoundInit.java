@@ -62,10 +62,6 @@ public class SoundInit {
 	
 	public static final RegistryObject<SoundEvent> GARAND_PING = register("item.m1_garand.ping");
 	
-	public static final RegistryObject<SoundEvent> AWP_FIRE = register("item.awp.fire");
-
-	public static final RegistryObject<SoundEvent> AWP_BOLT = register("item.awp.bolt");
-	
 	public static final RegistryObject<SoundEvent> BENELLI_FIRE = register("item.benelli.fire");
 	
 	public static final RegistryObject<SoundEvent> BENELLI_COCK = register("item.benelli.cock");
@@ -115,6 +111,12 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> PPSH_FIRE = register("item.ppsh_41.fire");
 	
 	public static final RegistryObject<SoundEvent> PPSH_COCK = register("item.ppsh_41.cock");
+	
+	public static final RegistryObject<SoundEvent> WRAPPED_RIFLE_FIRE = register("item.wrapped_rifle.fire");
+	
+	public static final RegistryObject<SoundEvent> WRAPPED_RIFLE_COCK = register("item.wrapped_rifle.cock");
+
+	public static final RegistryObject<SoundEvent> HELLFIRE_FIRE = register("item.hellfire.fire");
 	
 	//Method to help us register sounds
 	private static RegistryObject<SoundEvent> register(String key) {
