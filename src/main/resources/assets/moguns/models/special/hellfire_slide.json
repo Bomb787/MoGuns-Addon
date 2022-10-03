@@ -1,0 +1,85 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "moguns:items/hellfire"
+	},
+	"elements": [
+		{
+			"from": [8.695, 3.05, 11.1],
+			"to": [8.795, 4, 13.5],
+			"faces": {
+				"north": {"uv": [5.5, 3, 6.5, 4], "texture": "#1", "tintindex": 0},
+				"east": {"uv": [11.5, 14.5, 16, 16], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [1, 1, 0, 2.5], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [6, 0, 0, 1], "texture": "#1", "tintindex": 0},
+				"up": {"uv": [3, 1, 1.5, 2.5], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [1, 1.5, 6, 2], "texture": "#1", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, -6.75],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"firstperson_righthand": {
+			"translation": [-3.5, 8.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"translation": [3.75, -3.25, 0]
+		},
+		"ground": {
+			"translation": [0, 5, -1]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [1.25, 4.5, 0],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [-3.25, 11.25, -2],
+			"scale": [2, 2, 2]
+		}
+	},
+	"groups": [
+		{
+			"name": "Chamber",
+			"origin": [8.4, 7.4, 6],
+			"color": 0,
+			"children": []
+		},
+		{
+			"name": "Barrel",
+			"origin": [8.4, 7.4, 6],
+			"color": 0,
+			"children": []
+		},
+		{
+			"name": "Sight",
+			"origin": [8, 4.4, 12.8],
+			"color": 0,
+			"children": []
+		},
+		{
+			"name": "Receiver",
+			"origin": [8, 7.95, 8],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "Handle",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": []
+		},
+		{
+			"name": "group",
+			"origin": [8, 6.27, 13.8825],
+			"color": 0,
+			"children": []
+		}
+	]
+}
