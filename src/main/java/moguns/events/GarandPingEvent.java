@@ -1,9 +1,10 @@
 package moguns.events;
 
 import com.mrcrayfish.guns.event.GunFireEvent.Post;
+
 import moguns.MoGuns;
+import moguns.init.ItemInit;
 import moguns.init.SoundInit;
-import moguns.items.GarandGunItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
@@ -24,14 +25,9 @@ public class GarandPingEvent {
         ItemStack heldItem = player.getMainHandItem();
         CompoundNBT tag = heldItem.getTag();
     	
-    	if(!(heldItem.getItem() instanceof GarandGunItem))
-    		return;
-    	
-    	if(heldItem.getItem() instanceof GarandGunItem && tag != null) {
+    	if(heldItem.getItem() == ItemInit.M1_GARAND.get() && tag != null) {
     		
-    		int ammo = tag.getInt("AmmoCount");
-    		
-    		if(ammo == 1)
+    		if(tag.getInt("AmmoCount") == 1)
     			event.getPlayer().level.playSound(player, player.blockPosition(), SoundInit.GARAND_PING.get(), SoundCategory.MASTER, 3.0F, 1.0F);
     		
     	}
