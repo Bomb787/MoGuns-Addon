@@ -6,7 +6,8 @@ import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.ModelEvent;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.model.ForgeModelBakery;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
@@ -15,24 +16,24 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
  */
 @EventBusSubscriber(modid = MoGuns.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
 public enum SpecialModels {
-
-    //The values in this class are stored here so we can call upon them.
-    LIGHT_SCAR_L_STOCK("light_scar_l_stock"),
-    TACTICAL_SCAR_L_STOCK("tactical_scar_l_stock"),
-    HEAVY_SCAR_L_STOCK("heavy_scar_l_stock"),
-    SCAR_L_MAIN("scar_l_main"),
-    SCAR_L_CHARGING_HANDLE("scar_l_charging_handle"),
-    LIGHT_SCAR_H_STOCK("light_scar_h_stock"),
+	
+	//The values in this class are stored here so we can call upon them.
+	LIGHT_SCAR_L_STOCK("light_scar_l_stock"),
+	TACTICAL_SCAR_L_STOCK("tactical_scar_l_stock"),
+	HEAVY_SCAR_L_STOCK("heavy_scar_l_stock"),
+	SCAR_L_MAIN("scar_l_main"),
+	SCAR_L_CHARGING_HANDLE("scar_l_charging_handle"),
+	LIGHT_SCAR_H_STOCK("light_scar_h_stock"),
     TACTICAL_SCAR_H_STOCK("tactical_scar_h_stock"),
     HEAVY_SCAR_H_STOCK("heavy_scar_h_stock"),
     SCAR_H_MAIN("scar_h_main"),
     SCAR_H_CHARGING_HANDLE("scar_h_charging_handle"),
-    G36C_MAIN("g36c_main"),
-    G36C_CHARGING_HANDLE("g36c_charging_handle"),
-    LIGHT_G36C_STOCK("light_g36c_stock"),
-    TACTICAL_G36C_STOCK("tactical_g36c_stock"),
-    HEAVY_G36C_STOCK("heavy_g36c_stock"),
-    AKM_MAIN("akm_main"),
+	G36C_MAIN("g36c_main"),
+	G36C_CHARGING_HANDLE("g36c_charging_handle"),
+	LIGHT_G36C_STOCK("light_g36c_stock"),
+	TACTICAL_G36C_STOCK("tactical_g36c_stock"),
+	HEAVY_G36C_STOCK("heavy_g36c_stock"),
+	AKM_MAIN("akm_main"),
     AKM_CHARGING_HANDLE("akm_charging_handle"),
     AKM_CUSTOM_MAIN("akm_custom_main"),
     AKM_CUSTOM_CHARGING_HANDLE("akm_custom_charging_handle"),
@@ -96,13 +97,13 @@ public enum SpecialModels {
     HEAVY_BLUE_HEAT_STOCK("heavy_blue_heat_stock"),
     HOG_BONKER_MAIN("hog_bonker_main"),
     HOG_BONKER_BARRELS("hog_bonker_barrels");
-
-    //Variables
+	
+	//Variables
     private final ResourceLocation modelLocation;
     private final boolean specialModel;
     @OnlyIn(Dist.CLIENT)
     private BakedModel cachedModel;
-
+    
     SpecialModels(String modelName) {
         //Get the file path for the special modes, and set them to true (the are going to be special models)
         this(new ResourceLocation(MoGuns.MOD_ID, "special/" + modelName), true);
@@ -113,18 +114,7 @@ public enum SpecialModels {
         this.modelLocation = resourceLocation;
         this.specialModel = specialModel;
     }
-
-    //Register a new model to that item
-    @SubscribeEvent
-    @OnlyIn(Dist.CLIENT)
-    public static void registerAdditional(ModelEvent.RegisterAdditional event) {
-        for (SpecialModels model : values()) {
-            if (model.specialModel) {
-                event.register(model.modelLocation);
-            }
-        }
-    }
-
+    
     //Get the item's model
     @OnlyIn(Dist.CLIENT)
     public BakedModel getModel() {
@@ -137,4 +127,16 @@ public enum SpecialModels {
         }
         return this.cachedModel;
     }
+
+    //Register a new model to that item
+    @SubscribeEvent
+    @OnlyIn(Dist.CLIENT)
+    public static void register(ModelRegistryEvent event) {
+        for (SpecialModels model : values()) {
+            if (model.specialModel) {
+            	ForgeModelBakery.addSpecialModel(model.modelLocation);
+            }
+        }
+    }
+
 }

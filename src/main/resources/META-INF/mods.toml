@@ -27,18 +27,18 @@ description='A simple addon for MrCrayfishs Gun Mod'
 [[dependencies.moguns]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2,)"
+    versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.moguns]]
     modId="cgm"
     mandatory=true
-    versionRange="[1.2.8,)"
+    versionRange="[1.2.5,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.moguns]]
     modId="framework"
     mandatory=true
-    versionRange="[0.4.0,)"
+    versionRange="[0.2.3,)"
     ordering="NONE"
     side="BOTH"
