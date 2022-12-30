@@ -4,10 +4,10 @@ license="GNU GPLv3" #mandatory
 
 [[mods]]
 modId="moguns"
-version="1.8.1a"
+version="1.9"
 displayName="Mo' Guns"
 authors="Code by Bomb787, art by AlanorMiga"
-credits="MrCrayfish, Bomb787, AlanorMiga"
+credits="MrCrayfish, Bomb787, AlanorMiga, GlobalHive"
 description='A simple addon for MrCrayfishs Gun Mod'
 
 #Dependencies are an integral part of this
