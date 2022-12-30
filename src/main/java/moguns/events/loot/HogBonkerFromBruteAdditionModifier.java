@@ -1,43 +1,56 @@
 package moguns.events.loot;
 
-import com.google.common.base.Suppliers;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
-import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import java.util.List;
+
+import javax.annotation.Nonnull;
+
+import com.google.gson.JsonObject;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraftforge.common.loot.IGlobalLootModifier;
+import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.function.Supplier;
 
 public class HogBonkerFromBruteAdditionModifier extends LootModifier {
+	
+    private final Item addition;
 
-    private final Item item;
-
-    public static final Supplier<Codec<HogBonkerFromBruteAdditionModifier>> CODEC = Suppliers.memoize(()
-            -> RecordCodecBuilder.create(instance -> codecStart(instance).and(ForgeRegistries.ITEMS.getCodec()
-            .fieldOf("item").forGetter(m -> m.item)).apply(instance, HogBonkerFromBruteAdditionModifier::new)));
-
-    protected HogBonkerFromBruteAdditionModifier(LootItemCondition[] conditionsIn, Item item) {
+    protected HogBonkerFromBruteAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
         super(conditionsIn);
-        this.item = item;
+        this.addition = addition;
     }
 
+    @Nonnull
     @Override
-    protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() >= 0.9f) {
-            generatedLoot.add(new ItemStack(item));
+    protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
+        // generatedLoot is the loot that would be dropped, if we wouldn't add or replace
+        // anything!
+        if(context.getRandom().nextFloat() > 0.90f) {
+            generatedLoot.add(new ItemStack(addition, 1));
         }
+
         return generatedLoot;
     }
 
-    @Override
-    public Codec<? extends IGlobalLootModifier> codec() {
-        return CODEC.get();
+    public static class Serializer extends GlobalLootModifierSerializer<HogBonkerFromBruteAdditionModifier> {
+
+        @Override
+        public HogBonkerFromBruteAdditionModifier read(ResourceLocation name, JsonObject object, LootItemCondition[] conditionsIn) {
+            Item addition = ForgeRegistries.ITEMS.getValue(
+                    new ResourceLocation(GsonHelper.getAsString(object, "addition")));
+            return new HogBonkerFromBruteAdditionModifier(conditionsIn, addition);
+        }
+
+        @Override
+        public JsonObject write(HogBonkerFromBruteAdditionModifier instance) {
+            JsonObject json = makeConditions(instance.conditions);
+            json.addProperty("addition", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
+            return json;
+        }
     }
 }

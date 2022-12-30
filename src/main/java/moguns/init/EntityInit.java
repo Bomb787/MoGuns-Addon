@@ -1,5 +1,7 @@
 package moguns.init;
 
+import java.util.function.BiFunction;
+
 import moguns.MoGuns;
 import moguns.entities.TakiProjectileEntity;
 import net.minecraft.world.entity.Entity;
@@ -10,8 +12,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.function.BiFunction;
-
 /**
  * This class is where all of the mod's entities are registered.
  */
@@ -19,7 +19,7 @@ import java.util.function.BiFunction;
  */
 public class EntityInit {
 	
-	public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MoGuns.MOD_ID);
+	public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, MoGuns.MOD_ID);
 	
 	public static final RegistryObject<EntityType<TakiProjectileEntity>> TAKI = registerBasic("taki", TakiProjectileEntity::new);
     

@@ -32,7 +32,6 @@ import moguns.client.render.gun.model.WelrodModel;
 import moguns.client.render.gun.model.WrappedRifleModel;
 import moguns.entities.TakiProjectileEntity;
 import moguns.events.RecoilShootingEvent;
-import moguns.events.loot.ModLootModifiers;
 import moguns.init.EntityInit;
 import moguns.init.ItemInit;
 import moguns.init.SoundInit;
@@ -80,7 +79,6 @@ public class MoGuns {
 		ItemInit.ITEMS.register(bus);
 		SoundInit.SOUNDS.register(bus);
 		EntityInit.ENTITIES.register(bus);
-		ModLootModifiers.register(bus);
 		
 		bus.addListener(this::onClientSetup);
 		
