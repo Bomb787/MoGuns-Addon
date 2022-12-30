@@ -7,7 +7,6 @@ import com.mrcrayfish.guns.item.ScopeItem;
 import com.mrcrayfish.guns.item.attachment.impl.Scope;
 
 import moguns.MoGuns;
-import moguns.items.GarandGunItem;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.potion.EffectInstance;
@@ -56,8 +55,8 @@ public class ItemInit {
 	public static final RegistryObject<GunItem> FAMAS = ITEMS.register("famas",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 
-	public static final RegistryObject<GarandGunItem> M1_GARAND = ITEMS.register("m1_garand",
-			() -> new GarandGunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+	public static final RegistryObject<GunItem> M1_GARAND = ITEMS.register("m1_garand",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 	
 	public static final RegistryObject<GunItem> AKM_CUSTOM = ITEMS.register("akm_custom",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
