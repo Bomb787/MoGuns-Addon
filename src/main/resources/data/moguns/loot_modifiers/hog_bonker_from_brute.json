@@ -1,10 +1,10 @@
 {
+  "type": "moguns:hog_bonker_from_brute",
   "conditions": [
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:entities/piglin_brute"
     }
   ],
-  "addition": "moguns:hog_bonker",
-  "type": "moguns:hog_bonker_from_brute"
+  "item": "moguns:hog_bonker"
 }

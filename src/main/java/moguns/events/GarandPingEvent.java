@@ -1,7 +1,6 @@
 package moguns.events;
 
 import com.mrcrayfish.guns.event.GunFireEvent.Post;
-
 import moguns.MoGuns;
 import moguns.init.ItemInit;
 import moguns.init.SoundInit;
@@ -17,22 +16,20 @@ import net.minecraftforge.fml.common.Mod;
  */
 @Mod.EventBusSubscriber(modid = MoGuns.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class GarandPingEvent {
-	
-	@SubscribeEvent
+
+    @SubscribeEvent
     public static void postShoot(Post event) {
-		
-        Player player = event.getPlayer();
+
+        Player player = event.getEntity();
         ItemStack heldItem = player.getMainHandItem();
         CompoundTag tag = heldItem.getTag();
-    	
-    	if(heldItem.getItem() == ItemInit.M1_GARAND.get() && tag != null) {
-    		
-    		if(tag.getInt("AmmoCount") == 1)
-    			event.getPlayer().level.playSound(player, player.blockPosition(), SoundInit.GARAND_PING.get(), SoundSource.MASTER, 3.0F, 1.0F);
-    		
-    	}
-    		
-    	
+
+        if (heldItem.getItem() == ItemInit.M1_GARAND.get() && tag != null) {
+
+            if (tag.getInt("AmmoCount") == 1)
+                event.getEntity().level.playSound(player, player.blockPosition(), SoundInit.GARAND_PING.get(), SoundSource.MASTER, 3.0F, 1.0F);
+
+        }
     }
 
 }
