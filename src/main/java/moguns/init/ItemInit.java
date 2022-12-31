@@ -7,6 +7,7 @@ import com.mrcrayfish.guns.item.ScopeItem;
 import com.mrcrayfish.guns.item.attachment.impl.Scope;
 
 import moguns.MoGuns;
+import moguns.items.TrumpetItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -61,8 +62,8 @@ public class ItemInit {
 	public static final RegistryObject<GunItem> AKM_CUSTOM = ITEMS.register("akm_custom",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 	
-	/*public static final RegistryObject<GunItem> AWP = ITEMS.register("awp",
-			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));*/
+	public static final RegistryObject<GunItem> AWP = ITEMS.register("awp",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 	
 	public static final RegistryObject<GunItem> BENELLI = ITEMS.register("benelli",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
@@ -136,6 +137,16 @@ public class ItemInit {
 	public static final RegistryObject<GunItem> HOG_BONKER = ITEMS.register("hog_bonker",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 	
+	public static final RegistryObject<GunItem> M2 = ITEMS.register("m2",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+
+	public static final RegistryObject<GunItem> X15 = ITEMS.register("x15",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+
+	public static final RegistryObject<GunItem> FLARE_GUN = ITEMS.register("flare_gun",
+			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
+	
+	
 	//Scope Items
 	public static final RegistryObject<ScopeItem> REFLEX_SIGHT = ITEMS.register("reflex_sight",
 			() -> new ScopeItem(Scope.create(0.1F, 2F, GunModifiers.SLOW_ADS).viewFinderOffset(0.3), new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
@@ -184,5 +195,12 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> AMMO_TAKI = ITEMS.register("taki",
 			() -> new AmmoItem(new Item.Properties().stacksTo(64).tab(MoGuns.GROUP).food(TAKI)));
+
+	public static final RegistryObject<Item> FLARE = ITEMS.register("flare",
+			() -> new AmmoItem(new Item.Properties().stacksTo(8).tab(MoGuns.GROUP)));
+	
+	//Misc Items
+	public static final RegistryObject<TrumpetItem> TRUMPET = ITEMS.register("trumpet",
+			() -> new TrumpetItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 
 }

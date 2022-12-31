@@ -19,6 +19,8 @@ public class MoGunsClient {
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		
         event.registerEntityRenderer(EntityInit.TAKI.get(), ProjectileRenderer::new);
+        event.registerEntityRenderer(EntityInit.FLAMMABLE_GEL.get(), ProjectileRenderer::new);
+		event.registerEntityRenderer(EntityInit.FLARE.get(), ProjectileRenderer::new);
         
     }
 

@@ -1,0 +1,56 @@
+{
+    "general": {
+        "auto": true,
+        "rate": 1,
+        "gripType": "cgm:two_handed",
+        "maxAmmo": 100,
+        "reloadAmount": 10,
+        "recoilKick": 0.25,
+        "recoilAngle": 1,
+        "projectileAmount": 3,
+        "alwaysSpread": true,
+        "spread": 20.0
+    },
+    "projectile": {
+        "item": "minecraft:magma_cream",
+        "visible": false,
+        "damage": 0,
+        "size": 0.2,
+        "speed": 2.0,
+        "life": 10
+    },
+    "sounds": {
+        "fire": "moguns:item.m2.fire",
+        "reload": "cgm:item.pistol.reload",
+        "cock": "moguns:item.m16a1.cock"
+    },
+    "display": {
+        "flash": {
+            "yOffset": 3.5,
+            "zOffset": -6,
+            "size": 1
+        }
+    },
+    "modules": {
+        "zoom": {
+            "fovModifier": 0.6,
+            "yOffset": 5.8,
+            "zOffset": 2.75
+        },
+        "attachments": {
+            "scope": {
+                "yOffset": 4.5,
+                "zOffset": 4.0
+            },
+            "stock": {
+                "yOffset": 3.6,
+                "zOffset": 8.2,
+                "scale": 0.0
+            },
+            "underBarrel": {
+                "yOffset": 1.6,
+                "zOffset": -1.0
+            }
+        }
+    }
+}

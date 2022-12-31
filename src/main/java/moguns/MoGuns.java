@@ -6,9 +6,11 @@ import com.mrcrayfish.guns.common.ProjectileManager;
 import moguns.client.render.gun.model.AKMCustomModel;
 import moguns.client.render.gun.model.AKMModel;
 import moguns.client.render.gun.model.ASVALModel;
+import moguns.client.render.gun.model.AWPModel;
 import moguns.client.render.gun.model.BenelliModel;
 import moguns.client.render.gun.model.BlueHeatModel;
 import moguns.client.render.gun.model.ButterflyModel;
+import moguns.client.render.gun.model.DoubleBarrelModel;
 import moguns.client.render.gun.model.FamasModel;
 import moguns.client.render.gun.model.G36CModel;
 import moguns.client.render.gun.model.Glock17Model;
@@ -30,13 +32,22 @@ import moguns.client.render.gun.model.VSSVintorezModel;
 import moguns.client.render.gun.model.WaltherPPKModel;
 import moguns.client.render.gun.model.WelrodModel;
 import moguns.client.render.gun.model.WrappedRifleModel;
+import moguns.entities.FireballProjectileEntity;
+import moguns.entities.FlareProjectileEntity;
 import moguns.entities.TakiProjectileEntity;
 import moguns.events.RecoilShootingEvent;
 import moguns.init.EntityInit;
 import moguns.init.ItemInit;
+import moguns.init.ParticleInit;
 import moguns.init.SoundInit;
+import moguns.particles.FireballParticle;
+import moguns.particles.FlareSmokeParticle;
+import moguns.particles.SonicBoomParticle;
+import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -79,8 +90,10 @@ public class MoGuns {
 		ItemInit.ITEMS.register(bus);
 		SoundInit.SOUNDS.register(bus);
 		EntityInit.ENTITIES.register(bus);
+		ParticleInit.PARTICLES.register(bus);
 		
 		bus.addListener(this::onClientSetup);
+		bus.addListener(this::onParticlesRegistry);
 		
 	}
 	
@@ -91,8 +104,17 @@ public class MoGuns {
 		System.out.println("Slava Ukraini! Heroiam Slava!");
 		
 		ProjectileManager.getInstance().registerFactory(ItemInit.AMMO_TAKI.get(), ((world, livingEntity, itemStack, gunItem, gun) -> new TakiProjectileEntity(EntityInit.TAKI.get(), world, livingEntity, itemStack, gunItem, gun)));
+		ProjectileManager.getInstance().registerFactory(Items.MAGMA_CREAM, ((world, livingEntity, itemStack, gunItem, gun) -> new FireballProjectileEntity(EntityInit.FLAMMABLE_GEL.get(), world, livingEntity, itemStack, gunItem, gun)));
+		ProjectileManager.getInstance().registerFactory(ItemInit.FLARE.get(), ((world, livingEntity, itemStack, gunItem, gun) -> new FlareProjectileEntity(EntityInit.FLARE.get(), world, livingEntity, itemStack, gunItem, gun)));
 			
 	}
+	
+	@SuppressWarnings("resource")
+	private void onParticlesRegistry(ParticleFactoryRegisterEvent event) {
+        Minecraft.getInstance().particleEngine.register(ParticleInit.FIREBALL_PARTICLES.get(), FireballParticle.Provider::new);
+        Minecraft.getInstance().particleEngine.register(ParticleInit.FLARE_SMOKE.get(), FlareSmokeParticle.Provider::new);
+        Minecraft.getInstance().particleEngine.register(ParticleInit.SONIC_BOOM.get(), SonicBoomParticle.Provider::new);
+    }
 	
 	//This is the client setup event.
 	private void onClientSetup(FMLClientSetupEvent event) {
@@ -107,7 +129,7 @@ public class MoGuns {
 		ModelOverrides.register(ItemInit.REFLEX_SIGHT.get(), new ReflexSightModel());
 		ModelOverrides.register(ItemInit.THOMPSON.get(), new ThompsonModel());
 		ModelOverrides.register(ItemInit.AKM_CUSTOM.get(), new AKMCustomModel());
-		//ModelOverrides.register(ItemInit.AWP.get(), new AWPModel());
+		ModelOverrides.register(ItemInit.AWP.get(), new AWPModel());
 		ModelOverrides.register(ItemInit.BENELLI.get(), new BenelliModel());
 		ModelOverrides.register(ItemInit.GLOCK17.get(), new Glock17Model());
 		ModelOverrides.register(ItemInit.M14_EBR.get(), new M14EBRModel());
@@ -126,6 +148,7 @@ public class MoGuns {
 		ModelOverrides.register(ItemInit.HELLFIRE.get(), new HellfireModel());
 		ModelOverrides.register(ItemInit.BLUE_HEAT.get(), new BlueHeatModel());
 		ModelOverrides.register(ItemInit.HOG_BONKER.get(), new HogBonkerModel());
+		ModelOverrides.register(ItemInit.DOUBLE_BARREL.get(), new DoubleBarrelModel());
 		
 		MinecraftForge.EVENT_BUS.register(RecoilShootingEvent.get());
 	        

@@ -21,7 +21,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '1.8.1a'
+version = '1.9'
 group = 'io.github.bomb787' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'moguns'
 
@@ -46,6 +46,7 @@ minecraft {
     mappings channel: 'parchment', version: '2022.09.04-1.18.2'
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.

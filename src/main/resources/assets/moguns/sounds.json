@@ -311,5 +311,47 @@
     "sounds": [
       { "name": "moguns:item/hellfire_fire" }
     ]
+  },
+  "item.m2.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/m2_fire" }
+    ]
+  },
+  "item.flare_gun.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/flare_gun_fire" }
+    ]
+  },
+  "item.flare_gun.cock": {
+    "subtitle": "subtitle.flare_gun.cock",
+    "sounds": [
+      { "name": "moguns:item/flare_gun_cock" }
+    ]
+  },
+  "item.flare_gun.reload": {
+    "subtitle": "subtitle.flare_gun.reload",
+    "sounds": [
+      { "name": "moguns:item/flare_gun_reload" }
+    ]
+  },
+  "item.awp.fire": {
+    "subtitle": "subtitle.cgm.fire",
+    "sounds": [
+      { "name": "moguns:item/awp_fire" }
+    ]
+  },
+  "item.awp.bolt": {
+    "subtitle": "subtitle.awp.bolt",
+    "sounds": [
+      { "name": "moguns:item/awp_bolt" }
+    ]
+  },
+  "item.trumpet.doot": {
+    "subtitle": "subtitle.moguns.doot",
+    "sounds": [
+      { "name": "moguns:item/doot" }
+    ]
   }
 }
