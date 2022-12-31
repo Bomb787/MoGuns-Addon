@@ -2,7 +2,7 @@
     "general": {
         "auto": true,
         "rate": 1,
-        "gripType": "cgm:two_handed",
+        "gripType": "cgm:mini_gun",
         "maxAmmo": 50,
         "reloadAmount": 10,
         "recoilKick": 0.25,
@@ -14,7 +14,7 @@
     "projectile": {
         "item": "minecraft:magma_cream",
         "visible": false,
-        "damage": 0.5,
+        "damage": 2,
         "size": 0.2,
         "speed": 2.0,
         "gravity": true,
