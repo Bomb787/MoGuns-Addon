@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "moguns:items/paper_cartridge",
-		"particle": "moguns:items/paper_cartridge"
+		"0": "moguns:items/musket_cartridge",
+		"particle": "moguns:items/musket_cartridge"
 	},
 	"elements": [
 		{

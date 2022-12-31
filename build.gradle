@@ -21,7 +21,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '1.9'
+version = '1.9.1'
 group = 'io.github.bomb787' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'moguns'
 

@@ -4,7 +4,7 @@ license="GNU GPLv3" #mandatory
 
 [[mods]]
 modId="moguns"
-version="1.9"
+version="1.9.1"
 displayName="Mo' Guns"
 authors="Code by Bomb787, art by AlanorMiga"
 credits="MrCrayfish, Bomb787, AlanorMiga, GlobalHive"
