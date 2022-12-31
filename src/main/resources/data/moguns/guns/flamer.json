@@ -2,7 +2,7 @@
     "general": {
         "auto": true,
         "rate": 1,
-        "gripType": "cgm:two_handed",
+        "gripType": "cgm:mini_gun",
         "maxAmmo": 50,
         "reloadAmount": 10,
         "recoilKick": 0.25,

@@ -77,7 +77,7 @@
 	"item.moguns.hog_bonker": "Hog Bönker",
 	"item.moguns.awp": "Arctic Warfare Police",
 	"item.moguns.m2": "M2 Flamethrower",
-	"item.moguns.x15": "X15 Flamethrower",
+	"item.moguns.flamer": "Flamer",
 	"item.moguns.flare_gun": "Flare Gun",
 
 	//Attachments
@@ -102,7 +102,7 @@
 	
 	//Entities
 	"entity.moguns.taki": "Taki",
-	"entity.moguns.magma_cream": "Aerosolised Magma Cream",
+	"entity.moguns.magma_cream": "Aerosolized Magma Cream",
 	"entity.moguns.flare": "Flare",
 	
 	//Misc

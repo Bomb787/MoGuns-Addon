@@ -140,7 +140,7 @@ public class ItemInit {
 	public static final RegistryObject<GunItem> M2 = ITEMS.register("m2",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 
-	public static final RegistryObject<GunItem> X15 = ITEMS.register("x15",
+	public static final RegistryObject<GunItem> FLAMER = ITEMS.register("flamer",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 
 	public static final RegistryObject<GunItem> FLARE_GUN = ITEMS.register("flare_gun",

@@ -1,21 +1,35 @@
 {
-	"credit": "Made by AlanorMiga with Blockbench",
+	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "moguns:items/g36c"
+		"0": "moguns:items/g36c",
+		"particle": "moguns:items/g36c"
 	},
 	"elements": [
 		{
-			"from": [7.7, 4.4, 9],
-			"to": [8.3, 4.7, 12.8],
+			"from": [7.7, 3.05, 11.1],
+			"to": [8.75, 3.65, 13.3],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.1, 5.5]},
 			"faces": {
-				"north": {"uv": [15.5, 10.5, 16, 11], "rotation": 270, "texture": "#2", "tintindex": 0},
-				"east": {"uv": [15.5, 10.5, 16, 11], "rotation": 270, "texture": "#2", "tintindex": 0},
-				"south": {"uv": [15.5, 10.5, 16, 11], "rotation": 270, "texture": "#2", "tintindex": 0},
-				"west": {"uv": [15.5, 10.5, 16, 11], "rotation": 270, "texture": "#2", "tintindex": 0},
-				"up": {"uv": [15.5, 10.5, 16, 11], "rotation": 270, "texture": "#2", "tintindex": 0},
-				"down": {"uv": [15.5, 10.5, 16, 11], "rotation": 270, "texture": "#2", "tintindex": 0}
+				"north": {"uv": [3.5, 10.5, 5.5, 11], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"east": {"uv": [3.5, 10.5, 5.5, 11], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"south": {"uv": [3.5, 10.5, 5.5, 11], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"west": {"uv": [3.5, 10.5, 5.5, 11], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"up": {"uv": [3.5, 10.5, 5.5, 11], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [3.5, 10.5, 5.5, 11], "rotation": 270, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.7, 4.4, 9],
+			"to": [8.3, 4.7, 13.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.1, 5.5]},
+			"faces": {
+				"north": {"uv": [0, 5.5, 0.5, 6], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"east": {"uv": [0, 5.5, 0.5, 6], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"south": {"uv": [0, 5.5, 0.5, 6], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"west": {"uv": [0, 5.5, 0.5, 6], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"up": {"uv": [0, 5.5, 0.5, 6], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 5.5, 0.5, 6], "rotation": 270, "texture": "#0", "tintindex": 0}
 			}
 		}
 	],
@@ -44,5 +58,44 @@
 			"translation": [-3.25, 11.25, -2],
 			"scale": [2, 2, 2]
 		}
-	}
+	},
+	"groups": [
+		{
+			"name": "assault_rifle",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "Receiver",
+					"origin": [8, 2.135, 11.95],
+					"color": 0,
+					"children": [0]
+				},
+				{
+					"name": "Sight",
+					"origin": [0, -0.2, -0.1],
+					"color": 0,
+					"children": [1]
+				},
+				{
+					"name": "Magazine",
+					"origin": [0, 0.76, 0],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "Grip",
+					"origin": [0, 0.4, 0],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "Hanguard",
+					"origin": [8.4, 7.4, 6],
+					"color": 0,
+					"children": []
+				}
+			]
+		}
+	]
 }
