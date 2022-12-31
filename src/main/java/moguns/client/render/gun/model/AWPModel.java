@@ -1,6 +1,7 @@
 package moguns.client.render.gun.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Vector3f;
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.RenderUtil;
 
@@ -12,6 +13,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemCooldowns;
 import net.minecraft.world.item.ItemStack;
 
+/**
+ * Since we want to have an animation for the slide, we will be overriding the standard model rendering.
+ */
 public class AWPModel implements IOverrideModel {
 
 	@SuppressWarnings("resource")
@@ -26,7 +30,6 @@ public class AWPModel implements IOverrideModel {
             //Always push.
             matrixStack.pushPose();
             //Don't touch this, it's better to use the display options in Blockbench.
-            matrixStack.translate(0, -5.8 * 0.0625, 0);
             //Gets the cooldown tracker for the item. Items like swords and enderpearls also have this.
             ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
             float cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
@@ -36,10 +39,27 @@ public class AWPModel implements IOverrideModel {
              * X,Y,Z, use Z for moving back and forth.
              * The higher the number, the shorter the distance.
              */
-            matrixStack.translate(0, 0, cooldown/17);
-            matrixStack.translate(0, 5.8 * 0.0625, 0);
+            if (cooldown != 0) {
+                matrixStack.translate(-0.172, -0.0755, cooldown/10);
+                matrixStack.mulPose(Vector3f.ZN.rotationDegrees(-45F));
+            }
             //Renders the moving part of the gun.
             RenderUtil.renderModel(SpecialModels.AWP_BOLT.getModel(), stack, matrixStack, buffer, light, overlay);
+            //Always pop
+            matrixStack.popPose();
+            
+            //Another push/pop block because the AWP has that big block at the end of the bolt that doesn't turn.
+            //Always push.
+            matrixStack.pushPose();
+            //Don't touch this, it's better to use the display options in Blockbench.
+            /**
+             * We are moving whatever part is moving.
+             * X,Y,Z, use Z for moving back and forth.
+             * The higher the number, the shorter the distance.
+             */
+            matrixStack.translate(0, 0, cooldown/10);
+            //Renders the moving part of the gun.
+            RenderUtil.renderModel(SpecialModels.AWP_CHAMBER.getModel(), stack, matrixStack, buffer, light, overlay);
             //Always pop
             matrixStack.popPose();
 
