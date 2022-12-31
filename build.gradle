@@ -15,7 +15,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.8.1'
+version = '1.8.2'
 group = 'io.github.bomb787' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'moguns'
 
