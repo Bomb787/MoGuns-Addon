@@ -14,7 +14,7 @@
     "projectile": {
         "item": "minecraft:magma_cream",
         "visible": false,
-        "damage": 0,
+        "damage": 2,
         "size": 0.2,
         "speed": 2.0,
         "life": 10
