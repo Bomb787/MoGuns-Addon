@@ -98,6 +98,7 @@ public enum SpecialModels {
     HOG_BONKER_BARRELS("hog_bonker_barrels"),
     AWP_MAIN("awp_main"),
     AWP_BOLT("awp_bolt"),
+    AWP_CHAMBER("awp_chamber"),
     DOUBLE_BARREL_MAIN("double_barrel_main"),
     DOUBLE_BARREL_BARRELS("double_barrel_barrels");
 

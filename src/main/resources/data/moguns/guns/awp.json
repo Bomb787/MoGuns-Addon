@@ -1,7 +1,7 @@
 {
     "general": {
         "auto": false,
-        "rate": 40,
+        "rate": 34,
         "gripType": "cgm:two_handed",
         "maxAmmo": 10,
         "reloadAmount": 1,
@@ -41,6 +41,11 @@
             "scope": {
                 "yOffset": 4.5,
                 "zOffset": 3.0
+            },
+            "barrel": {
+                "yOffset": 3.875,
+                "zOffset": -12.25,
+                "scale": 0.5
             }
         }
     }
