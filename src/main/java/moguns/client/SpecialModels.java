@@ -95,7 +95,11 @@ public enum SpecialModels {
     TACTICAL_BLUE_HEAT_STOCK("tactical_blue_heat_stock"),
     HEAVY_BLUE_HEAT_STOCK("heavy_blue_heat_stock"),
     HOG_BONKER_MAIN("hog_bonker_main"),
-    HOG_BONKER_BARRELS("hog_bonker_barrels");
+    HOG_BONKER_BARRELS("hog_bonker_barrels"),
+    AWP_MAIN("awp_main"),
+    AWP_BOLT("awp_bolt"),
+    DOUBLE_BARREL_MAIN("double_barrel_main"),
+    DOUBLE_BARREL_BARRELS("double_barrel_barrels");
 
     //Variables
     private final ResourceLocation modelLocation;

@@ -33,6 +33,9 @@
 	"subtitle.mp5.cock": "MP5 Cocking",
 	"subtitle.ppsh_41.cock": "PPSh-41 Cocking",
 	"subtitle.wrapped_rifle.cock": "Wrapped Rifle Cocking",
+	"subtitle.flare_gun.cock": "Flare Gun Cocking",
+	"subtitle.flare_gun.reload": "Flare Gun Reloading",
+	"subtitle.awp.bolt": "AWP Cocking",
 	"subtitle.moguns.doot": "Doot",
 	
 	//Guns
@@ -72,6 +75,10 @@
 	"item.moguns.hellfire": "Hellfire",
 	"item.moguns.blue_heat": "Blue Heat",
 	"item.moguns.hog_bonker": "Hog Bönker",
+	"item.moguns.awp": "Arctic Warfare Police",
+	"item.moguns.m2": "M2 Flamethrower",
+	"item.moguns.x15": "X15 Flamethrower",
+	"item.moguns.flare_gun": "Flare Gun",
 
 	//Attachments
 	"item.moguns.reflex_sight": "Reflex Sight",
@@ -91,9 +98,12 @@
 	"item.moguns.762x25": "7.62x25 Tokarev",
 	"item.moguns.x_mas_light": "X-mas Light",
 	"item.moguns.taki": "Taki",
+	"item.moguns.flare": "Flare",
 	
 	//Entities
 	"entity.moguns.taki": "Taki",
+	"entity.moguns.magma_cream": "Aerosolised Magma Cream",
+	"entity.moguns.flare": "Flare",
 	
 	//Misc
 	"item.moguns.trumpet": "Trumpet"

@@ -14,9 +14,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemCooldowns;
 import net.minecraft.world.item.ItemStack;
 
-/**
- * Since we want to have an animation for the slide, we will be overriding the standard model rendering.
- */
 public class HogBonkerModel implements IOverrideModel {
 
 	@SuppressWarnings("resource")
@@ -34,14 +31,18 @@ public class HogBonkerModel implements IOverrideModel {
             ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
             float cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
 
-            if(!Gun.hasAmmo(stack)) {
-            	
+            if(Gun.hasAmmo(stack))
+                matrixStack.translate(0, 0, 0.1f * (-4.5 * Math.pow(cooldown-0.5, 2) + 1.125));
+            else if(!Gun.hasAmmo(stack)) {
+
                 if(cooldown > 0.5)
-                    matrixStack.translate(0, 0, 0.185f * (-4.5 * Math.pow(cooldown-0.5, 2) + 0.5));
+                    matrixStack.mulPose(Vector3f.XN.rotationDegrees(45F));
                 else
-                    matrixStack.mulPose(Vector3f.YN.rotationDegrees(45F * cooldown));
-                
+                    matrixStack.translate(0, -0.35f, -0.175);
+                    matrixStack.mulPose(Vector3f.XN.rotationDegrees(45F));
+
             }
+
             //Renders the moving part of the gun.
             RenderUtil.renderModel(SpecialModels.HOG_BONKER_BARRELS.getModel(), stack, matrixStack, buffer, light, overlay);
             //Always pop

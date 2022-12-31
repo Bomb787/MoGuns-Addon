@@ -62,9 +62,9 @@ public class SoundInit {
 	
 	public static final RegistryObject<SoundEvent> GARAND_PING = register("item.m1_garand.ping");
 	
-	//public static final RegistryObject<SoundEvent> AWP_FIRE = register("item.awp.fire");
+	public static final RegistryObject<SoundEvent> AWP_FIRE = register("item.awp.fire");
 
-	//public static final RegistryObject<SoundEvent> AWP_BOLT = register("item.awp.bolt");
+	public static final RegistryObject<SoundEvent> AWP_BOLT = register("item.awp.bolt");
 	
 	public static final RegistryObject<SoundEvent> BENELLI_FIRE = register("item.benelli.fire");
 	
@@ -121,6 +121,14 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> WRAPPED_RIFLE_COCK = register("item.wrapped_rifle.cock");
 
 	public static final RegistryObject<SoundEvent> HELLFIRE_FIRE = register("item.hellfire.fire");
+	
+	public static final RegistryObject<SoundEvent> M2_FIRE = register("item.m2.fire");
+
+	public static final RegistryObject<SoundEvent> FLARE_GUN_FIRE = register("item.flare_gun.fire");
+
+	public static final RegistryObject<SoundEvent> FLARE_GUN_COCK = register("item.flare_gun.cock");
+
+	public static final RegistryObject<SoundEvent> FLARE_GUN_RELOAD = register("item.flare_gun.reload");
 	
 	public static final RegistryObject<SoundEvent> TRUMPET = register("item.trumpet.doot");
 	

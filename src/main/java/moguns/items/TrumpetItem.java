@@ -52,7 +52,7 @@ public class TrumpetItem extends Item {
 			
 			EntityHitResult e = ProjectileUtil.getEntityHitResult(world, user, userPos, targetPos, new AABB(userPos, targetPos), this::canDamage);
 			
-			if(e.getEntity() instanceof LivingEntity entity) {
+			if(e != null && e.getEntity() instanceof LivingEntity entity) {
 				
 				entity.hurt(DamageSource.sonicBoom(user), 10.0F);
 		        double d1 = 0.5D * (1.0D - entity.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE));

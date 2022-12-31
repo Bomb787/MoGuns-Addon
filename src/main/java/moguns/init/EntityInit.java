@@ -1,6 +1,8 @@
 package moguns.init;
 
 import moguns.MoGuns;
+import moguns.entities.FireballProjectileEntity;
+import moguns.entities.FlareProjectileEntity;
 import moguns.entities.TakiProjectileEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -22,6 +24,8 @@ public class EntityInit {
 	public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MoGuns.MOD_ID);
 	
 	public static final RegistryObject<EntityType<TakiProjectileEntity>> TAKI = registerBasic("taki", TakiProjectileEntity::new);
+	public static final RegistryObject<EntityType<FireballProjectileEntity>> FLAMMABLE_GEL = registerBasic("magma_cream", FireballProjectileEntity::new);
+	public static final RegistryObject<EntityType<FlareProjectileEntity>> FLARE = registerBasic("flare", FlareProjectileEntity::new);
     
 	/**
      * This is a helper method when registering projectiles.
