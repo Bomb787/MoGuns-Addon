@@ -66,6 +66,8 @@ public class SoundInit {
 
 	public static final RegistryObject<SoundEvent> AWP_BOLT = register("item.awp.bolt");
 	
+	public static final RegistryObject<SoundEvent> AWP_SUPPRESSED = register("item.awp.suppressed_fire");
+	
 	public static final RegistryObject<SoundEvent> BENELLI_FIRE = register("item.benelli.fire");
 	
 	public static final RegistryObject<SoundEvent> BENELLI_COCK = register("item.benelli.cock");
