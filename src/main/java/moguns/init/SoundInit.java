@@ -122,6 +122,8 @@ public class SoundInit {
 
 	public static final RegistryObject<SoundEvent> HELLFIRE_FIRE = register("item.hellfire.fire");
 	
+	public static final RegistryObject<SoundEvent> TRUMPET = register("item.trumpet.doot");
+	
 	//Method to help us register sounds
 	private static RegistryObject<SoundEvent> register(String key) {
 			

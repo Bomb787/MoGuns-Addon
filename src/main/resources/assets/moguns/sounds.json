@@ -311,5 +311,11 @@
     "sounds": [
       { "name": "moguns:item/hellfire_fire" }
     ]
+  },
+  "item.trumpet.doot": {
+    "subtitle": "subtitle.moguns.doot",
+    "sounds": [
+      { "name": "moguns:item/doot" }
+    ]
   }
 }

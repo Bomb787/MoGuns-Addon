@@ -7,6 +7,7 @@ import com.mrcrayfish.guns.item.ScopeItem;
 import com.mrcrayfish.guns.item.attachment.impl.Scope;
 
 import moguns.MoGuns;
+import moguns.items.TrumpetItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -178,11 +179,15 @@ public class ItemInit {
 			() -> new AmmoItem(new Item.Properties().tab(MoGuns.GROUP)));
 	
 	public static final RegistryObject<Item> AMMO_XMAS_LIGHT = ITEMS.register("x_mas_light",
-			() -> new AmmoItem(new Item.Properties().stacksTo(64).tab(MoGuns.GROUP)));
+			() -> new AmmoItem(new Item.Properties().tab(MoGuns.GROUP)));
 	
 	public static final FoodProperties TAKI = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.1F).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1), 1.0F).fast().build();
 	
 	public static final RegistryObject<Item> AMMO_TAKI = ITEMS.register("taki",
-			() -> new AmmoItem(new Item.Properties().stacksTo(64).tab(MoGuns.GROUP).food(TAKI)));
+			() -> new AmmoItem(new Item.Properties().tab(MoGuns.GROUP).food(TAKI)));
+	
+	//Misc Items
+	public static final RegistryObject<TrumpetItem> TRUMPET = ITEMS.register("trumpet",
+			() -> new TrumpetItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 
 }

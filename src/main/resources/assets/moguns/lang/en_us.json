@@ -33,6 +33,7 @@
 	"subtitle.mp5.cock": "MP5 Cocking",
 	"subtitle.ppsh_41.cock": "PPSh-41 Cocking",
 	"subtitle.wrapped_rifle.cock": "Wrapped Rifle Cocking",
+	"subtitle.moguns.doot": "Doot",
 	
 	//Guns
 	"item.moguns.scar_l": "FN SCAR-L",
@@ -92,6 +93,9 @@
 	"item.moguns.taki": "Taki",
 	
 	//Entities
-	"entity.moguns.taki": "Taki"
+	"entity.moguns.taki": "Taki",
+	
+	//Misc
+	"item.moguns.trumpet": "Trumpet"
 
 }
