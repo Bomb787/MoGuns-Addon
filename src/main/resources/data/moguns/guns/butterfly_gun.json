@@ -26,7 +26,7 @@
     "display": {
         "flash": {
             "yOffset": 3,
-            "zOffset": 3
+            "zOffset": 1.5
         }
     },
     "modules": {
