@@ -3,7 +3,6 @@ package moguns.init;
 import moguns.MoGuns;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -16,9 +15,5 @@ public class ParticleInit {
             PARTICLES.register("fireball", () -> new SimpleParticleType(true));
     public static final RegistryObject<SimpleParticleType> FLARE_SMOKE =
             PARTICLES.register("flare_smoke", () -> new SimpleParticleType(true));
-
-
-    public static void register(IEventBus eventBus) {
-        PARTICLES.register(eventBus);
-    }
+    
 }

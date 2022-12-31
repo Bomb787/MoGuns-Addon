@@ -89,6 +89,7 @@ public class MoGuns {
 		ItemInit.ITEMS.register(bus);
 		SoundInit.SOUNDS.register(bus);
 		EntityInit.ENTITIES.register(bus);
+		ParticleInit.PARTICLES.register(bus);
 		ModLootModifiers.register(bus);
 		
 		bus.addListener(this::onClientSetup);
@@ -110,7 +111,7 @@ public class MoGuns {
 	
 	private void onParticlesRegistry(RegisterParticleProvidersEvent event) {
 		event.register(ParticleInit.FIREBALL_PARTICLES.get(), FireballParticle.Provider::new);
-		event.register(ParticleInit.FIREBALL_PARTICLES.get(), FlareSmokeParticle.Provider::new);
+		event.register(ParticleInit.FLARE_SMOKE.get(), FlareSmokeParticle.Provider::new);
     }
 	
 	//This is the client setup event.

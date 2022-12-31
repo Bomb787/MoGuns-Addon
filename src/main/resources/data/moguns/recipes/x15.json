@@ -1,0 +1,12 @@
+{
+    "type": "cgm:workbench",
+    "result": {
+        "item": "moguns:x15"
+    },
+    "materials": [
+        {
+            "item": "minecraft:iron_ingot",
+            "count": 32
+        }
+    ]
+}
