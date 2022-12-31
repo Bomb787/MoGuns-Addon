@@ -22,7 +22,7 @@
         "fire": "moguns:item.akm.fire",
         "reload": "cgm:item.pistol.reload",
         "cock": "moguns:item.akm.cock",
-        "silencedFire": "moguns:item.scarl.suppressed_fire"
+        "silencedFire": "moguns:item.scar_l.suppressed_fire"
     },
     "display": {
         "flash": {

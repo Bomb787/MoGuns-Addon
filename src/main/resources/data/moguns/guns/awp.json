@@ -22,7 +22,7 @@
         "fire": "moguns:item.awp.fire",
         "reload": "cgm:item.pistol.reload",
         "cock": "moguns:item.awp.bolt",
-        "silencedFire": "moguns:item.as_val.fire"
+        "silencedFire": "moguns:item.awp.suppressed_fire"
     },
     "display": {
         "flash": {

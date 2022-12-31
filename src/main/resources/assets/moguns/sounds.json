@@ -348,6 +348,12 @@
       { "name": "moguns:item/awp_bolt" }
     ]
   },
+  "item.awp.suppressed_fire": {
+    "subtitle": "subtitle.cgm.fire.silenced",
+    "sounds": [
+      { "name": "moguns:item/awp_suppressed_fire" }
+    ]
+  },
   "item.trumpet.doot": {
     "subtitle": "subtitle.moguns.doot",
     "sounds": [
