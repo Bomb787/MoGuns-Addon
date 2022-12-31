@@ -26,7 +26,6 @@ public class EntityInit {
 	public static final RegistryObject<EntityType<TakiProjectileEntity>> TAKI = registerBasic("taki", TakiProjectileEntity::new);
 	public static final RegistryObject<EntityType<FireballProjectileEntity>> FLAMMABLE_GEL = registerBasic("magma_cream", FireballProjectileEntity::new);
 	public static final RegistryObject<EntityType<FlareProjectileEntity>> FLARE = registerBasic("flare", FlareProjectileEntity::new);
-	
     
 	/**
      * This is a helper method when registering projectiles.

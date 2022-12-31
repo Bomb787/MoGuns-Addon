@@ -146,7 +146,6 @@ public class ItemInit {
 	public static final RegistryObject<GunItem> FLARE_GUN = ITEMS.register("flare_gun",
 			() -> new GunItem(new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
 	
-	
 	//Scope Items
 	public static final RegistryObject<ScopeItem> REFLEX_SIGHT = ITEMS.register("reflex_sight",
 			() -> new ScopeItem(Scope.create(0.1F, 2F, GunModifiers.SLOW_ADS).viewFinderOffset(0.3), new Item.Properties().stacksTo(1).tab(MoGuns.GROUP)));
@@ -189,12 +188,12 @@ public class ItemInit {
 			() -> new AmmoItem(new Item.Properties().tab(MoGuns.GROUP)));
 	
 	public static final RegistryObject<Item> AMMO_XMAS_LIGHT = ITEMS.register("x_mas_light",
-			() -> new AmmoItem(new Item.Properties().stacksTo(64).tab(MoGuns.GROUP)));
+			() -> new AmmoItem(new Item.Properties().tab(MoGuns.GROUP)));
 	
 	public static final FoodProperties TAKI = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.1F).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1), 1.0F).fast().build();
 	
 	public static final RegistryObject<Item> AMMO_TAKI = ITEMS.register("taki",
-			() -> new AmmoItem(new Item.Properties().stacksTo(64).tab(MoGuns.GROUP).food(TAKI)));
+			() -> new AmmoItem(new Item.Properties().tab(MoGuns.GROUP).food(TAKI)));
 
 	public static final RegistryObject<Item> FLARE = ITEMS.register("flare",
 			() -> new AmmoItem(new Item.Properties().stacksTo(8).tab(MoGuns.GROUP)));
