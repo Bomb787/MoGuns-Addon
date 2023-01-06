@@ -40,14 +40,9 @@ import moguns.init.EntityInit;
 import moguns.init.ItemInit;
 import moguns.init.ParticleInit;
 import moguns.init.SoundInit;
-import moguns.particles.FireballParticle;
-import moguns.particles.FlareSmokeParticle;
-import moguns.particles.SonicBoomParticle;
-import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -93,7 +88,6 @@ public class MoGuns {
 		ParticleInit.PARTICLES.register(bus);
 		
 		bus.addListener(this::onClientSetup);
-		bus.addListener(this::onParticlesRegistry);
 		
 	}
 	
@@ -108,13 +102,6 @@ public class MoGuns {
 		ProjectileManager.getInstance().registerFactory(ItemInit.FLARE.get(), ((world, livingEntity, itemStack, gunItem, gun) -> new FlareProjectileEntity(EntityInit.FLARE.get(), world, livingEntity, itemStack, gunItem, gun)));
 			
 	}
-	
-	@SuppressWarnings("resource")
-	private void onParticlesRegistry(ParticleFactoryRegisterEvent event) {
-        Minecraft.getInstance().particleEngine.register(ParticleInit.FIREBALL_PARTICLES.get(), FireballParticle.Provider::new);
-        Minecraft.getInstance().particleEngine.register(ParticleInit.FLARE_SMOKE.get(), FlareSmokeParticle.Provider::new);
-        Minecraft.getInstance().particleEngine.register(ParticleInit.SONIC_BOOM.get(), SonicBoomParticle.Provider::new);
-    }
 	
 	//This is the client setup event.
 	private void onClientSetup(FMLClientSetupEvent event) {
