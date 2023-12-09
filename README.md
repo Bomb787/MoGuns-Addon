@@ -1,5 +1,3 @@
 # MoGuns Addons
 
-- An addon that adds various new weapons for Mr. Crayfish's gun mod
-
-- Made for AlanorMiga#9922 on Discord
+- An addon that adds various new weapons for Mr. Crayfish's Gun Mod that doesn't exactly take itself super seriously.
