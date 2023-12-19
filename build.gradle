@@ -170,7 +170,7 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.19.2-43.2.2'
+    minecraft 'net.minecraftforge:forge:1.19.2-43.3.0'
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
@@ -183,8 +183,8 @@ dependencies {
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-    implementation fg.deobf('curse.maven:framework-549225:4271590')
-    implementation fg.deobf('curse.maven:mrcrayfishs-gun-mod-289479:3874034')
+    implementation fg.deobf('curse.maven:framework-549225:4718247')
+    implementation fg.deobf('curse.maven:mrcrayfishs-gun-mod-289479:4718583')
     
 }
 
