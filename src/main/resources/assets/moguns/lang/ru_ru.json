@@ -5,15 +5,15 @@
 	"advancements.moguns.crayfishtitle": "Оружие от MrCrayfish",
 	"advancements.moguns.crayfishdescription": "Добро пожаловать в мир оружия!",
 	"advancements.moguns.minigun.title": "БРРРРРРРРТ",
-	"advancements.moguns.minigun.description": "4 стака изумрудов стоит стрельба из этой пушки… в течение двенадцати секунд",
+	"advancements.moguns.minigun.description": "4 стопки изумрудов стоит стрельба из этой пушки... в течение двенадцати секунд",
 	"advancements.moguns.getbigiron.title": "Аризонский рейнджер",
-	"advancements.moguns.getbigiron.description": "В один прекрасный день в городок Агуа Фриа прискакал незнакомец…",
+	"advancements.moguns.getbigiron.description": "В один прекрасный день в городок Агуа Фриа прискакал незнакомец...",
 	"advancements.moguns.getbaker.title": "По холмам и по дороге",
-	"advancements.moguns.getbaker.description": "Через Фландрию, Потругалию и Испанию…",
-	
+	"advancements.moguns.getbaker.description": "Через Фландрию, Португалию и Испанию...",
+
 	"comment_1": "Творческая вкладка",
-	"itemGroup.moguns": "Больше пушек",
-	
+	"itemGroup.moguns": "Больше Пушек",
+
 	"comment_2": "Звуки",
 	"subtitle.scarl.cock": "Взведение FN SCAR-L",
 	"subtitle.g36c.cock": "Взведение G36C",
@@ -26,7 +26,7 @@
 	"subtitle.m1_garand.ping": "Щелчок M1 Гаранд",
 	"subtitle.trashcan.boom": "Покойтесь с миром, пользователи наушников",
 	"subtitle.trashcan.reload": "Польские парни смеются",
-	"subtitle.big_iron.pew": "Техасец не успел вытащить пистолет из кобуры…",
+	"subtitle.big_iron.pew": "Техасец не успел вытащить пистолет из кобуры...",
 	"subtitle.welrod.cock": "Взведение Велрода",
 	"subtitle.baker.cock": "Взведение винтовки Бейкера",
 	"subtitle.lanchester.cock": "Взведение ПП «Ланчестер»",
@@ -38,7 +38,7 @@
 	"subtitle.awp.bolt": "Взведение AWP",
 	"subtitle.moguns.doot": "Звук трубы",
 	"subtitle.remington_870.cock": "Взведение Ремингтона 870",
-	
+
 	"comment_3": "Оружие",
 	"item.moguns.scar_l": "FN SCAR-L",
 	"item.moguns.g36c": "G36C",
@@ -77,13 +77,18 @@
 	"item.moguns.blue_heat": "Голубое тепло",
 	"item.moguns.hog_bonker": "Боров Бенкер",
 	"item.moguns.awp": "AWP",
-	"item.moguns.m2": "Огнемет M2",
+	"item.moguns.m2": "Огнемёт M2",
 	"item.moguns.flamer": "Огнемёт",
 	"item.moguns.flare_gun": "Сигнальный пистолет",
+	"item.moguns.m16_lsw": "M16 LSW",
+	"item.moguns.m60": "M60",
+	"item.moguns.m107": "M107",
+	"item.moguns.m249": "M249",
+	"item.moguns.tat": "Гром тройного действия",
 
 	"comment_4": "Обвесы",
 	"item.moguns.reflex_sight": "Рефлекторный прицел",
-	
+
 	"comment_5": "Боеприпасы",
 	"item.moguns.762x51": "7.62×51 НАТО",
 	"item.moguns.556x45": "5.56×45 НАТО",
@@ -100,13 +105,13 @@
 	"item.moguns.x_mas_light": "Рождественский свет",
 	"item.moguns.taki": "Таки",
 	"item.moguns.flare": "Сигнальная ракета",
-	
-	"comment_5": "Сущности",
+	"item.moguns.50_bmg": ".50 BMG",
+
+	"comment_6": "Сущности",
 	"entity.moguns.taki": "Таки",
 	"entity.moguns.magma_cream": "Аэрозольный сгусток магмы",
 	"entity.moguns.flare": "Сигнальная ракета",
-	
-	"comment_6": "Прочее",
-	"item.moguns.trumpet": "Труба"
 
+	"comment_7": "Прочее",
+	"item.moguns.trumpet": "Труба"
 }
